@@ -1,0 +1,15 @@
+/* regla para los titulos*/
+h1 {
+    font-size: 260%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: darkred;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+

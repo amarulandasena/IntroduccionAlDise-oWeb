@@ -10,7 +10,7 @@
         <meta name="keywords" content="diseño, web, html5, css3, aprenidzaje, enseñanza, curso, básico"/>
         <meta http-equiv="content-type" content="UTF-8"/>
 
-        <link rel="stylesheet" href="../css/HojaEstilos1" type="text/css" hreflang="es" media="screen"/>
+        <link rel="stylesheet" href="../css/HojaEstilos1.css" type="text/css" hreflang="es" media="screen"/>
         <script type="text/javascript" src="./Script1.js" async></script>
 
         <title>
@@ -41,12 +41,12 @@
             ejecutar los mismos.
         </p>
 
-        <h3>
+        <h3 style="margin-left: 20px;">
             ATRIBUTOS:
         </h3>
 
         <p>
-            Async se puede utilizar solo cuando el script es externo, es decir se ha especificado
+            <b>Async</b> se puede utilizar solo cuando el script es externo, es decir se ha especificado
             el atributo src, indicando que se cargue el script desde un documento exterior.<br>
             Si el atributo se especifica los script del documento serán ejecutados de
             forma asíncrona, es decir se ejecutaran en el momento que tengan oportunidad y
@@ -54,7 +54,7 @@
             garantiza por tanto el orden de ejecución de los mismos.
         </p>
         <p>
-            Defer se puede utilizar solo cuando el script es externo, es decir se ha especificado
+            <b>Defer</b> se puede utilizar solo cuando el script es externo, es decir se ha especificado
             el atributo src, indicando que se cargue el script desde un documento exterior.<br>
             Si se especifica el atributo los script del documento serán cargados y
             ejecutados, cuando se haya finalizado la carga del documento. De esta forma se
@@ -62,17 +62,17 @@
             dentro del documento web.
         </p>
         <p>
-            Type permite especificar el tipo MIME del script. El tipo MIME está compuesto de
+            <b>Type</b> permite especificar el tipo MIME del script. El tipo MIME está compuesto de
             dos partes una el tipo seguido de una barra y el subtipo. Por defecto el tipo MIME
             en caso de no especificarse es “text/javascript”.
         </p>
         <p>
-            El atributo src permite especificar la dirección URL del recurso al cual se quiere
+            El atributo <b>src</b> permite especificar la dirección URL del recurso al cual se quiere
             acceder, siendo en este caso el archivo que contiene el código de script a cargar en
             el documento web. La ruta puede ser relativa o absoluta.
         </p>
         <p>
-            La etiqueta noscript, es complementaria de la anterior, ya que se utiliza para
+            La etiqueta <b>noscript</b>, es complementaria de la anterior, ya que se utiliza para
             definir un contenido alternativo en el documento web, cuando el navegador no soporta la
             ejecución de scripts, o bien cuando los mismos están desactivados en el navegador que
             recibe el documento.
