@@ -22,31 +22,33 @@
         <h1>
             USO DE LA ETIQUETA SCRIPT.
         </h1>
-
-        <p>
-            La etiqueta script permite la inserción de códigos script.
-            El código se puede insertar directamente entre las etiquetas o haciendo referencia a un documento externo el cual
-            contiene el código script a ejecutar. En este último caso la etiqueta de script no ha de tener contenido.
-        </p>
-        <p>
-            Los “navegadores” o visualizadores realizan la carga del documento web de forma
-            secuencial, cuando el navegador se encuentra con una etiqueta de script y esta contiene el
-            atributo src, puede provocar que si el script es muy lento en su ejecución o cuando se
-            carga el script y este hace referencia a un elemento del documento web, que no ha sido
-            cargado todavía, pueda producirse un error de ejecución en el documento.
-        </p>
-        <p>
-            En HTML5 se pueden utilizar los atributos de la etiqueta como son async y defer,
-            los cuales permitirían la inserción del código de script indicando a su vez cuando se han de
-            ejecutar los mismos.
-        </p>
+        <div class="pruebaClase">
+            <p>
+                La etiqueta script permite la inserción de códigos script.
+                El código se puede insertar directamente entre las etiquetas o haciendo referencia a un documento externo el cual
+                contiene el código script a ejecutar. En este último caso la etiqueta de script no ha de tener contenido.
+            </p>
+            <p>
+                Los “navegadores” o visualizadores realizan la carga del documento web de forma
+                secuencial, cuando el navegador se encuentra con una etiqueta de script y esta contiene el
+                atributo src, puede provocar que si el script es muy lento en su ejecución o cuando se
+                carga el script y este hace referencia a un elemento del documento web, que no ha sido
+                cargado todavía, pueda producirse un error de ejecución en el documento.
+            </p>
+            <p>
+                En HTML5 se pueden utilizar los atributos de la etiqueta como son async y defer,
+                los cuales permitirían la inserción del código de script indicando a su vez cuando se han de
+                ejecutar los mismos.
+            </p>
+        </div>
+        
 
         <h3 style="margin-left: 20px;">
             ATRIBUTOS:
         </h3>
 
         <p>
-            <b>Async</b> se puede utilizar solo cuando el script es externo, es decir se ha especificado
+            <b class="pruebaClase1">Async</b> se puede utilizar solo cuando el script es externo, es decir se ha especificado
             el atributo src, indicando que se cargue el script desde un documento exterior.<br>
             Si el atributo se especifica los script del documento serán ejecutados de
             forma asíncrona, es decir se ejecutaran en el momento que tengan oportunidad y
@@ -62,7 +64,7 @@
             dentro del documento web.
         </p>
         <p>
-            <b>Type</b> permite especificar el tipo MIME del script. El tipo MIME está compuesto de
+            <b class="pruebaClase1">Type</b> permite especificar el tipo MIME del script. El tipo MIME está compuesto de
             dos partes una el tipo seguido de una barra y el subtipo. Por defecto el tipo MIME
             en caso de no especificarse es “text/javascript”.
         </p>
