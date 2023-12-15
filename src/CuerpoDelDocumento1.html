@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es" manifest="CuerpoDelDocumento1.appcache">
+    <head>
+        <base href="http://127.0.0.1:5500/src/CuerpoDelDocumento1.html" target="_blank"/>
+        <meta charset="UTF-8">
+        <meta name="application-name" content="Introducción al diseño web">
+        <meta name="author" content="Andres Marulanda">
+        <meta name="description" content="Aplicación para el aprendizaje del lenguaje HTML junto con CSS3">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="keywords" content="diseño, web, html5, css3, aprenidzaje, enseñanza, curso, básico">
+        <meta name="http-equiv" content="UTF-8">
+        <link rel="stylesheet" href="../css/HojaEstilos1.css" type="text/css" hreflang="es" media="screen">
+
+        <title>
+            Cuerpo Del Documento 1
+        </title>
+    </head>
+
+    <body>
+        <a href="#etiquetaEM" target="_self">Enlace a la etiqueta EM</a>
+        <h2>
+            PARRAFO DE INTRODUCCIÓN A LA ETIQUETA P.
+        </h2>
+        <p>
+            La finalidad de la etiqueta es la de definir un párrafo, el texto encerrado entre las mismas será considerado 
+            por el navegador como un párrafo.El navegador realiza un ajuste automático de los párrafos al ancho de pantalla 
+            determinado por la ventana del programa navegador. Se ha de tener en cuenta que los navegadores cuando realizan 
+            la representación del lenguaje HTML5, no tienen en cuenta más de un espacio en blanco de separación entre palabras, 
+            es decir aunque deje con su editor de textos entre una palabra y otra más de un espacio en blanco, solo se visualizara 
+            uno descartándose el resto. Ocurre igual con los saltos de línea que pueda insertar dentro de un párrafo en su editor 
+            HTML5, el navegador solo interpretara como saltos de líneas aquellos que sean representados por su etiqueta equivalente.
+        </p>
+
+        <h2>
+            ETIQUETA A.
+        </h2>
+        <p>
+            Sirve para definir y crear un hiperenlace, el cual permite realizar enlaces del documento web con otros documentos o 
+            recursos disponibles. Por defecto al pulsar sobre un enlace, el contenido al cual se está accediendo se ha
+            de mostrar en la misma ventana del navegador, sustituyendo el documento web actual por el que se quiere acceder.
+            <a href="./EncabezadoDelDocumento.html" hreflang="es" rel="prev" type="text/html" media="screen">Para ir a Encabezado 
+            del Documento, haga clic aquí.</a>
+        </p>
+        <p>
+            <b>href</b> permite establecer la URL en la que se encuentra el documento el cual se quiere enlazar, con el documento web. 
+            Se puede especificar una URL absoluta, relativa o un ancla “enlace” en el mismo documento.
+        </p>
+        <p>
+            <b>hreflang</b> permite establecer el lenguaje del documento que se está enlazando, aunque no realiza ninguna función 
+            especial en los navegadores, puede ser utilizado por los motores de búsqueda para establecer el idioma.
+        </p>
+        <p>
+            <b>rel</b> sirve para especificar la relación existente entre el documento web y el documento con el que se está realizando 
+            el enlace.
+        </p>
+        <p>
+            <b>type</b> sirve para especificar el tipo MIME5 del documento con el que se está realizando el enlace.
+        </p>
+        <p>
+            <b>media</b> servirá para indicar el tipo de dispositivo para el cual se está realizando el enlace.
+        </p>
+        <p>
+            <b>target</b> permite especificar el destino por defecto para todos los enlaces y formularios del documento web.
+        </p>
+        <p>
+            <a href="../img/gato3.jpg" hreflang="es" type="image/jpg" media="screen">
+                Enlace a la imagen de un gato.
+            </a>
+        </p>
+
+        <h2>
+            ETIQUETA B (BOLD).
+        </h2>
+        <p>
+            la etiqueta se utiliza para resaltar texto en el documento, aplicando un formato de negrita (“bold”), al mismo.
+            El lenguaje html5, especifica lo que se denomina la web semántica, aplicando ciertas etiquetas al contenido, para 
+            indicar de esta forma que una parte del contenido sea más relevante que otra. Se recomienda utilizar esta etiqueta 
+            como último recurso y en el caso de que ninguna otra etiqueta sea más apropiada. 
+        </p>
+        <p id="parrafoNegrita">
+            Como recordatorio, se indica que para poder resaltar texto en negrita se utilice la propiedad Font-weight, del lenguaje CSS.
+        </p>
+
+        <h2 id="etiquetaEM">
+            ETIQUETA EM.
+        </h2>
+    </body>
+</html>

@@ -13,3 +13,14 @@ p {
     text-align: justify;
 }
 
+h2 {
+    font-size: 200%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    color: crimson;
+}
+
+/** Regla para un id */
+#parrafoNegrita {                               
+    font-weight: 800;
+}
