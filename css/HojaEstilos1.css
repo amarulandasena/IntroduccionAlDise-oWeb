@@ -44,6 +44,11 @@ p b {
     font-size: 23px;
 }
 
+/** Selector de hijos aplicado a Introducción a la etiqueta Script */
+div > p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 /** p.pruebaClase1 solo le aplicará el formato al parrafo cuyo atributo class tenga el valor de pruebaClase1, 
 sin modificar los demas elementos que tengan ese mismo atributo/valor.
 
@@ -51,4 +56,5 @@ sin modificar los demas elementos que tengan ese mismo atributo/valor.
 .clase1
 .clase2
 .clse3"*/
+
 
