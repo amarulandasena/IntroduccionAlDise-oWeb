@@ -17,7 +17,16 @@
     </head>
 
     <body>
-        <a href="#etiquetaEM" target="_self">Enlace a la etiqueta EM</a>
+        <a href="#etiquetaEM" target="_self">Enlace a la etiqueta EM</a></br>
+        <a href="#etiquetaSTRONG" target="_self">Enlace a la etiqueta Strong</a></br>
+        <a href="#etiquetaCODE" target="_self">Enlace a la etiqueta Code</a></br>
+        <a href="#etiquetaSAMP" target="_self">Enlace a la etiqueta Samp</a></br>
+        <a href="#etiquetaKBD" target="_self">Enlace a la etiqueta Kbd</a></br>
+        <a href="#etiquetaVAR" target="_self">Enlace a la etiqueta Var</a></br>
+        <a href="#etiquetaMARK" target="_self">Enlace a la etiqueta Mark</a></br>
+        <a href="#etiquetaCITE" target="_self">Enlace a la etiqueta Cite</a></br>
+        <a href="#etiquetaI" target="_self">Enlace a la etiqueta I</a>
+
         <h2>
             PARRAFO DE INTRODUCCIÓN A LA ETIQUETA P.
         </h2>
@@ -84,5 +93,116 @@
         <h2 id="etiquetaEM">
             ETIQUETA EM.
         </h2>
+        <p>
+            Se utiliza <em>para resaltar texto en el documento dando “énfasis”al texto sobre el que se aplica la etiqueta.</em> 
+            Aunque es posible aplicar el mismo efecto utilizando hojas de estilo, esta etiqueta no se ha suprimido para ajustarse a 
+            la web semántica.  Los navegadores suelen visualizar el resultado de la etiqueta como un atributo de itálica o cursiva 
+            sobre el texto al que se le haya aplicado.
+        </p>
+
+        <h2 id="etiquetaSTRONG">
+            ETIQUETA STRONG
+        </h2>
+        <p>
+            Se utiliza para definir en el documento texto considerado importante, <strong>produce en el navegador el efecto de aplicar 
+            negrita, aunque es posible aplicar el mismo efecto utilizando hojas de estilo.</strong>  Se recomienda utilizar esta etiqueta 
+            para resaltar texto importante antes que utilizar la etiqueta comentada anteriormente (b).
+        </p>
+
+        <h2 id="etiquetaCODE">
+            ETIQUETA CODE
+        </h2>
+        <p>
+            Permite definir texto resaltado, utilizando para indicar que el texto hace referencia bien a partes de un ordenador, 
+            o código fuente de programación.
+        </p>
+        <p>
+            <code>
+                Partes de un computador:</br>
+                Pantalla</br>
+                CPU</br>
+            </code>
+        </p>
+
+        <h2 id="etiquetaSAMP">
+            ETIQUETA SAMP
+        </h2>
+        <p>
+            Permite definir texto en el documento resaltado semánticamente, indicando que el texto marcado es la salida que 
+            proporciona un programa de ordenador.
+        </p>
+        <p>
+            <code>
+                System.out.println("Hola Mundo del desarrollo web.");
+            </code>
+        </p>
+        <p>
+            Esto permitirá mostrar en pantalla el mensaje: </br>
+            <samp>
+                Hola Mundo del desarrollo web.
+            </samp>
+        </p>
+
+        <h2 id="etiquetaKBD">
+            ETIQUETA KBD
+        </h2>
+        <p>
+            Permite especificar un formato de texto para distinguir lo que el usuario tendría que teclear en la solicitud de un programa.
+        </p>
+        <p>
+            Ejemplo: </br>
+            <kbd>
+                Número de identificación sin comas ni puntos.
+            </kbd>
+        </p>
+
+        <h2 id="etiquetaVAR">
+            ETIQUETA VAR
+        </h2>
+        <p>
+            La finalidad de la etiqueta Var, es la de resaltar texto en el documento web, indicando que el mismo son la definición de 
+            variables en un programa de ordenador.
+        </p>
+        <p>
+            Por ejemplo: </br>
+            <var> int x = 0; </br></var>
+            <var> int y = 0; </br></var>
+        </p>
+
+        <h2 id="#etiquetaMARK">
+            ETIQUETA MARK
+        </h2>
+        <p>
+            Permite realizar el marcado de un texto dentro del documento web, el efecto visual en el navegador del texto seleccionado, 
+            es como si se hubiera pasado un bolígrafo resaltador de texto por encima.
+        </p>
+        <p>
+            <mark>La Cigüeña Blanca</mark>, o Ciconia Ciconia, es un ave familiar con unas tradiciones arraigadas que busca en los machos 
+            protección y sustento, y cuya envergadura puede alcanzar los 215 cm. Se caracteriza por su parsimonia y su canto al que se 
+            le domina «crotoreo». Es un ave de gran tamaño, plumaje blanco y tono rojizo que no puede vivir lejos del agua y el sol. 
+            Por lo que suele encontrarse en zonas pantanosas, prados húmedos y aguas superficiales.
+        </p>
+
+        <h2 id="etiquetaCITE">
+            ETIQUETA CITE
+        </h2>
+        <p>
+            Se utiliza para resaltar el texto correspondiente al título de un trabajo, como obra, autor, película, actor, etc.
+        </p>
+        <p>
+            <cite>Cien años de soledad</cite> de Gabriel Garcia Marquez.
+        </p>
+
+        <h2 id="etiquetaI">
+            ETIQUETA I
+        </h2>
+        <p>
+            Tiene como finalidad la de expresar semánticamente una parte del texto en una voz alternativa o un estado de ánimo diferente. 
+            Anteriormente era usada para visualizar un texto en itálica, siendo su efecto visible en el navegador. Se puede utilizar para 
+            expresar un término técnico, una frase en un idioma distinto, nombres de objetos concretos, pensamientos, etc.
+            El W3C recomienda utilizar la etiqueta siempre y cuando semánticamente no exista otra posibilidad de utilizar una etiqueta 
+            distinta, como pueden ser em, strong, mark, etc.
+        </p>
+        <p><i>Diseño Digital, principios y prácticas.</i> de Wakerly.</p> 
     </body>
 </html>
