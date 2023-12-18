@@ -1,0 +1,6 @@
+/* Selector de atributos para las etiquetas a de Cuerpo del documento 1*/
+a[href] {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(41, 109, 86);
+}
+
