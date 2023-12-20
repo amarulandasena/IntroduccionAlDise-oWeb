@@ -4,3 +4,7 @@ a[href] {
     color: rgb(41, 109, 86);
 }
 
+/* Selector de clase para aplicar un formato de ancho y alto a un parrafo*/
+.anchoYalto {
+        width: 800px;
+}

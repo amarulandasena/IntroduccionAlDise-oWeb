@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="es" manifest="ModeloDeCajas.appcache">
+    <head>
+        <base href="http://127.0.0.1:5500/src/ModeloDeCajas.html" target="_blank">
+        <meta charset="UTF-8">
+        <meta name="author" content="Andres Marulanda">
+        <meta name="application-name" content="Introducción al diseño web">
+        <meta name="description" content="Aplicación para el aprendizaje del lenguaje HTML junto con CSS3">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="keywords" content="diseño, web, html5, css3, aprenidzaje, enseñanza, curso, básico">
+        <meta name="http-equiv" content="UTF-8">
+
+        <link rel="stylesheet" href="../css/HojaEstilos2.css" hreflang="es" type="text/css" media="screen">
+
+        <title>
+            Introducción al modelo de cajas.
+        </title>
+
+    </head>
+
+    <body>
+        <h1>
+            INTRODUCCIÓN AL MODELO DE CAJAS.
+        </h1>
+        <p>
+            El "box model" es el comportamiento de CSS que hace que todos los elementos incluidos en una página HTML se representen 
+            mediante cajas rectangulares. CSS permite controlar el aspecto de todas las cajas. CSS permite definir la altura y anchura 
+            de cada caja, el margen existente entre cajas y el espacio de relleno interior que muestra cada caja. Además, CSS permite 
+            controlar la forma en la que se visualizan las cajas: se pueden ocultar, desplazar respecto de su posición original y 
+            fijarlas en una posición específica dentro del documento.
+        </p>
+        <p class="anchoYalto">
+            Cada vez que se inserta una etiqueta o elemento en la página, se crea una nueva caja rectangular que encierra los contenidos
+            del elemento.
+        </p>
+
+        <h2>
+            ANCHO Y ALTO
+        </h2>
+        <p class="anchoYalto">
+            La propiedad CSS que controla la anchura de los elementos se denomina width. <br>
+            Valores : medida | porcentaje | auto | inherit. <br>
+            La propiedad width no admite valores negativos y los valores en porcentaje se calculan a partir de la anchura de su elemento 
+            padre. El valor inherit indica que la anchura del elemento se hereda de su elemento padre. El valor auto, que es el que se 
+            utiliza si no se establece de forma explícita un valor a esta propiedad, indica que el navegador debe calcular automáticamente 
+            la anchura del elemento, teniendo en cuenta sus contenidos y el sitio disponible en la página.
+        </p>
+    </body>
+</html>

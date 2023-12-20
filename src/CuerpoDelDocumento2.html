@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="es" manifest="CuerpoDelDocumento2.appcache">
+    <head>
+        <base href="http://127.0.0.1:5500/src/CuerpoDelDocumento2.html" target="_blank">
+        <meta charset="UTF-8">
+        <meta name="application-name" content="Introducción al diseño web">
+        <meta name="author" content="Andres Marulanda">
+        <meta name="description" content="Aplicación para el aprendizaje del lenguaje HTML junto con CSS3">
+        <meta name="genertaor" content="Visual Studio Code">
+        <meta name="keywords" content="diseño, web, html5, css3, aprenidzaje, enseñanza, curso, básico">
+        <meta name="http-equiv" content="UTF-8">
+
+        <link rel="stylesheet" href="../css/HojaEstilos1.css" hreflang="es" type="text/css" media="screen">
+
+        <title>
+            Cuerpo del documento 2
+        </title>
+    </head>
+    
+    <body>
+        <h2>
+            ETIQUETA S
+        </h2>
+        <p>
+            Tiene como finalidad la de expresar que un texto en el documento no es correcto, exacto o no es pertinente. 
+            El efecto de visualización que se produce en el navegador es el de tachado. Por ejemplo:
+        </p>
+        <p>
+            <s>No se ha de utilizar para especificar un texto que ha sido reemplazado o borrado.</s>
+        </p>
+
+        <h2>
+            ETIQUETA U
+        </h2>
+        <p>
+            Se utiliza en esta última versión de HTML5, para definir texto estilísticamente diferente del texto normal o nombres 
+            propios en otros idiomas. El efecto visual sobre el texto al cual se aplica la etiqueta es que aparece subrayado,
+            pudiendo llevar a confundir el texto con enlaces, los cuales normalmente suelen estar subrayados. Por ejemplo:
+        </p>
+        <p>
+            <u>Este es un texto al cual se le aplicó el efecto de la etiqueta U</u>
+        </p>
+
+        <h2>
+            ETIQUETA SMALL
+        </h2>
+        <p>
+            Permite definir “texto pequeño”, es decir el texto que se encierre en la etiqueta será representado por el navegador 
+            con un tamaño de fuente más pequeño que el normal. Por ejemplo:
+        </p>
+        <p>
+            <small>Matemáticas Avanzadas de Murray S. Spiegel.</small>
+        </p>
+
+        <h2>
+            ETIQUETA SUB
+        </h2>
+        <p>
+            Permite definir un texto en subíndice, el texto subíndice aparece por debajo de la línea base de representación del texto, 
+            por ejemplo: (Aplicamos el efecto al número 2 de la formula del agua).
+        </p>
+        <p>
+            H<sub>2</sub>O.
+        </p>
+
+        <h2>
+            ETIQUETA SUP
+        </h2>
+        <p>
+            Realiza la definición de un texto en formato superíndice, el texto en este formato es visualizado por el navegador por 
+            encima de la línea base de texto. Por ejemplo:
+        </p>
+        <p>
+            Ejercicios de programación y desarrollo web <sup>1</sup>.
+        </p>
+
+        <h2>
+            ETIQUETAS BR Y WBR
+        </h2>
+        <p>
+            La forma de indicar un salto es mediante las etiquetas de párrafo. Pero se puede realizar el forzado de salto de línea, 
+            utilizando para ello la etiqueta br, esta etiqueta permite realizar la inserción forzada de un salto de línea en el navegador.
+            Es una etiqueta de las denominadas “vacías”, es decir no tiene ni contenido, ni etiqueta de cierre. El salto de línea se 
+            produce en el lugar donde se sitúe la etiqueta y se mantiene independientemente aun cuando se altere el ancho de visualización 
+            del documento en el navegador.
+        </p>
+        <p>
+            Otro posible pequeño problema, es cuando en un documento existen párrafos de gran tamaño, y en ellos se pueden encontrar 
+            palabras de un tamaño considerable, posiblemente porque sean términos técnicos. Si se intenta cambiar el ancho devisualización
+             del navegador, el ajuste de párrafo que se produce, puede ocasionar que el párrafo no se visualice lo más justificado posible.
+            Para solventar el problema expuesto, existe la siguiente etiqueta wbr, que permite definir por donde se realiza el salto de 
+            línea en un término que sea muy grande. Mientras que el texto quepa sin problemas en la línea del párrafo no se produce ningún
+            corte en la palabra, si el termino no cabe en la línea, el navegador corta la palabra en el lugar donde se encuentra la 
+            etiqueta. Por ejemplo:
+        </p>
+        <p>
+            Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio.<br>Tiene sus raíces en una 
+            pieza clásica de la literatura del Latín, que data del año 45 antes de Cristo, haciendo que este adquiera más de 2000 años de
+            antigüedad.<br> Richard McClintock, un profesor de Latín de la Universidad de<mark> Hampden<wbr>-Sydney</mark> en Virginia, 
+            encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo
+            distintos textos del latín, descubrió la fuente indudable.
+        </p>
+
+        <h2>
+            ETIQUETA INS
+        </h2>
+        <p>
+            Permite definir que un texto ha sido actualizado o insertado en el documento web. La representación visual en el navegador 
+            suele ser la de texto subrayado. 
+        </p>
+        <p>
+            Cite: Este atributo permite establecer la URL en la que se encuentra el documento en el cual se explican los razonamientos de 
+            la inserción de texto realizada. Se puede especificar una dirección relativa o absoluta.
+        </p>
+        <p>
+            Datetime: El atributo permite establecer la fecha y hora en la cual se ha realizado la inserción de texto en el documento web.
+        </p>
+
+        <h2>
+            ETIQUETA DEL
+        </h2>
+        <p>
+            Permite definir texto que se ha marcado como borrado en una fecha determinada, la visualización del efecto en el navegador, 
+            es la de texto tachado.
+        </p>
+        <p>
+            Cite: Este atributo permite establecer la URL en la que se encuentra el documento, en el cual se explican los razonamientos 
+            del borrado de texto realizado.
+        </p>
+        <p>
+            Datetime: El atributo permite establecer la fecha y hora en la cual se ha realizado la eliminación del texto en el documento web.
+        </p>
+    </body>
+</html>
