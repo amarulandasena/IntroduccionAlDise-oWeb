@@ -12,6 +12,7 @@
         <meta name="http-equiv" content="UTF-8">
 
         <link rel="stylesheet" href="../css/HojaEstilos1.css" hreflang="es" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/HojaEstilos2.css" hreflang="es" type="text/css" media="screen">
 
         <title>
             Cuerpo del documento 2
@@ -130,6 +131,147 @@
         </p>
         <p>
             Datetime: El atributo permite establecer la fecha y hora en la cual se ha realizado la eliminación del texto en el documento web.
+        </p>
+
+        <h2>
+            ETIQUETA ABBR
+        </h2>
+        <p>
+            Permite definir texto indicando que es una abreviatura o acrónimo, como pueden ser “WWW” o “NASA”. El efecto visual en la 
+            mayoría de los navegadores, es que al mover el puntero del ratón por encima de la abreviatura, se visualiza un pequeño letrero 
+            con la información proporcionada por el atributo “title” de la etiqueta. Por ejemplo:
+        </p>
+        <p>
+            La sigla <abbr title="Federal Bureau of Investigation">FBI</abbr> identifica a una de las principales instituciones de 
+            investigación judicial de los Estados Unidos.
+        </p>
+
+        <h2>
+            ETIQUETA ADDRESS
+        </h2>
+        <p>
+            Permite definir la información de contacto del autor o propietario del documento o artículo. Los navegadores suelen visualizar 
+            la información de contacto en letra cursiva y la mayoría de navegadores insertan también un salto de línea antes y después de 
+            la etiqueta. Usualmente se suele ubicar la etiqueta de dirección dentro de otra denominada “footer”. Por ejemplo:
+        </p>
+        <footer>
+            <address>
+                Escrito por: <a href="mailto:afmsamsung1981@gmail.com">Jose Pepito Perez</a><br>
+                Visitenos en: <br>
+                www.aprendoenecasa.com <br>
+                Dirección: Calle Siempre Viva, Número 1234. <br>
+                Springfield, EEUU.
+            </address>
+        </footer>
+
+        <h2>
+            ETIQUETA BDO
+        </h2>
+        <p>
+            Permite definir la dirección de visualización del texto contenido en la misma. Atributo dir: Permite especificar la dirección 
+            de visualización del texto. Tiene como valores rtl (right to left) derecha a izquierda, y ltr (left to right) izquierda a 
+            derecha. Por ejemplo:
+        </p>
+        <p>
+            <bdo dir="rtl">Texto escrito de derecha a izquierda.</bdo>
+        </p>
+        <p>
+            <bdo dir="ltr">Texto escrito de izquierda a derecha.</bdo>
+        </p>
+
+        <h2>
+            ETIQUETA DFN
+        </h2>
+        <p>
+            Se utiliza para realizar la definición de un término. El efecto visual en el navegador es el de fuente cursiva, pero su 
+            significado semántico no es el mismo. Por ejemplo:
+        </p>
+        <p>
+            BIOS: <br>
+            <dfn>Sistema Básico de Entrada - Salida.</dfn>
+        </p>
+
+        <h2>
+            ETIQUETA PRE
+        </h2>
+        <p>
+            Permite definir lo que se denomina texto con formato o preformateado. Como se ha comentado anteriormente el navegador no 
+            respeta los saltos de línea y espacios en blanco sobrantes en un documento web. El utilizar esta fuente hace que los espacios 
+            en blanco y saltos de línea, que se inserten como contenido de la etiqueta sean respetados y por tanto, el texto se ha de
+            visualizar en el navegador tal como se ha escrito. Por ejemplo:
+        </p>
+        <p>
+            <pre class="formato">
+                Nombre : Juan Antonio.
+                Apellidos : Perez Perez.
+                ID : 1234567890.
+                Dirección : Calle Única, Número 123.
+                Teléfono: 3001597530.S
+            </pre>
+        </p>
+
+        <h2>
+            ETIQUETA Q
+        </h2>
+        <p>
+            Se utiliza para insertar un texto acotado entre comillas dobles. Por ejemplo:
+        </p>
+        <p>
+            Este texto se encuentra acotado por <q>comillas dobles</q>.
+        </p>
+
+        <h2>
+            ETIQUETA BLOCKQUOTE
+        </h2>
+        <p>
+            Permite realizar la inserción de un texto, el cual visualmente en el navegador se realiza sangría a la izquierda sobre el 
+            mismo, mientras que semánticamente se puede utilizar para realizar una distinción sobre un texto al que se quiere hacer 
+            referencia. Los atributos de la etiqueta son cite : permite especificar como valor, una URL o dirección de internet,
+            de la cual se ha extraído, consultado o simplemente se quiere referenciar al texto insertado en el documento. La URL, 
+            puede ser absoluta o relativa. Por ejemplo:
+        </p>
+        <p>Frases celebres: </p>
+        <blockquote cite="www.aprendoencasa.com">
+            <p>Me lo contaron y lo olvidé; lo vi y lo entendí; lo hice y lo aprendí. <cite>Confucio</cite></p>
+        </blockquote>
+
+        <h2>
+            ETIQUETA BDI
+        </h2>
+        <p>
+            Permite definir lo que se denomina aislamiento bidireccional, es decir permite insertar un texto contenido en otra etiqueta 
+            para ser escrito en otra dirección, como por ejemplo derecha a izquierda. Se utiliza normalmente cuando se desconoce 
+            la direccionalidad del texto insertado.
+        </p>
+
+        <h2>
+            ETIQUETA RUBY, RP, RT
+        </h2>
+        <p>
+            La etiqueta se utiliza en conjunto con otras dos etiquetas rt y rp, la primera permite realizar la explicación o pronunciación 
+            del texto, mientras que la segunda permite visualizar un texto en los navegadores que no soporten la primera característica.
+            Por ejemplo:
+        </p>
+        <p>
+            La siguiente sigla significa <ruby>PC<rp>(</rp><rt>Personal Computer</rt><rp>)</rp></ruby>
+        </p>
+
+        <h2>
+            ETIQUETA DIALOG
+        </h2>
+        <p>
+            También se utiliza para abrir un cuadro de dialogo en la ventana del navegador la cual muestre información al realizar un 
+            clic sobre un elemento del documento, aunque para que funcione esta característica, se han de habilitar ciertas opciones 
+            avanzadas del navegador. El único atributo disponible de la etiqueta, es open, el cual hace que se visualice el contenido 
+            del dialogo al cargar el documento web. Por ejemplo: 
+        </p>
+        <p>
+            El proposito de la BIOS es <dialog open class="dialogo">Iniciar, y probar el hardware del sistema y cargar un gestor de arranque o un sistema 
+            operativo desde un dispositivo de almacenamiento de datos. Además, el BIOS provee una capa de abstracción para el hardware, 
+            por ejemplo, que consiste en una vía para que los programas de aplicaciones y los sistemas operativos interactúen con el 
+            teclado, el monitor y otros dispositivos de entrada/salida. Las variaciones que ocurren en el hardware del sistema quedan 
+            ocultas por el BIOS, ya que los programas usan servicios de BIOS en lugar de acceder directamente al hardware. Los sistemas 
+            operativos modernos ignoran la capa de abstracción provista por el BIOS y acceden al hardware directamente.</dialog> 
         </p>
     </body>
 </html>

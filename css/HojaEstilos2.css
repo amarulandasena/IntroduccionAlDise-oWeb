@@ -8,3 +8,17 @@ a[href] {
 .anchoYalto {
         width: 800px;
 }
+
+footer {
+    margin-left: 20px;
+}
+
+.formato {
+    font-family: Tahoma;
+}
+
+.dialogo {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
