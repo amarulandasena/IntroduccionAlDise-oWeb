@@ -1,3 +1,8 @@
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 /* Selector de atributos para las etiquetas a de Cuerpo del documento 1*/
 a[href] {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -6,7 +11,8 @@ a[href] {
 
 /* Selector de clase para aplicar un formato de ancho y alto a un parrafo*/
 .anchoYalto {
-        width: 800px;
+    text-align: justify;    
+    width: 800px;
 }
 
 footer {
@@ -17,7 +23,8 @@ footer {
     font-family: Tahoma;
 }
 
-.dialogo {
+/* Selector de ID para la etiqueta Dialog del Cuerpo del documento 2 */
+#dialogo {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
