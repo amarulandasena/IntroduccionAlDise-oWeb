@@ -30,7 +30,7 @@
             controlar la forma en la que se visualizan las cajas: se pueden ocultar, desplazar respecto de su posición original y 
             fijarlas en una posición específica dentro del documento.
         </p>
-        <p class="anchoYalto">
+        <p>
             Cada vez que se inserta una etiqueta o elemento en la página, se crea una nueva caja rectangular que encierra los contenidos
             del elemento.
         </p>
@@ -45,6 +45,79 @@
             padre. El valor inherit indica que la anchura del elemento se hereda de su elemento padre. El valor auto, que es el que se 
             utiliza si no se establece de forma explícita un valor a esta propiedad, indica que el navegador debe calcular automáticamente 
             la anchura del elemento, teniendo en cuenta sus contenidos y el sitio disponible en la página.
+        </p>
+        <p class="anchoYalto"> 
+            La propiedad CSS que controla la altura de los elementos se denomina height.<br>
+            Valores medida | porcentaje | auto | inherit.<br>
+            Al igual que sucede con width, la propiedad height no admite valores negativos. Si se indica un porcentaje, se toma como 
+            referencia la altura del elemento padre. Si el elemento padre no tiene una altura definida explícitamente, se asigna el 
+            valor auto a la altura. El valor inherit indica que la altura del elemento se hereda de su elemento padre. El valor auto, 
+            que es el que se utiliza si no se establece de forma explícita un valor a esta propiedad, indica que el navegador debe 
+            calcular automáticamente la altura del elemento, teniendo en cuenta sus contenidos y el sitio disponible en la página.
+            
+        </p>
+
+        <h2 id="tituloMargenesYrelleno">
+            MARGENES Y RELLENO
+        </h2>
+        <p class="margenesYrelleno">
+            CSS define cuatro propiedades para controlar cada uno de los márgenes horizontales y verticales de un elemento.<br>
+            Valores : medida, porcentaje, auto, inherit.<br>
+            Margin-top y margin-bottom sólo se aplican a los elementos de bloque y a las imágenes.<br>
+            Cada una de las propiedades establece la separación entre el borde lateral de la caja y el resto de cajas adyacentes.<br>
+
+            Las unidades más utilizadas para indicar los márgenes de un elemento son los píxeles (cuando se requiere una precisión total),
+            los em (para hacer diseños que mantengan las proporciones) y los porcentajes (para hacer diseños líquidos o fluidos).<br>
+            Algunos diseñadores web utilizan la etiqueta blockquote para encerrar los contenidos de un párrafo que se quiere mostrar 
+            tabulado respecto al resto de contenidos, como en el ejemplo anterior. Se trata de un error grave porque utiliza código
+            XHTML erróneo para modificar el aspecto de los contenidos.<br>
+            La imagen, aplicación de margenes, muestra el resultado de aplicar los mismos márgenes a varios enlaces (elementos en línea) y varios párrafos
+            (elementos de bloque). En los elementos en línea los márgenes verticales no tienen ningún efecto, por lo que los enlaces no
+            muestran ninguna separación vertical, al contrario de lo que sucede con los párrafos.
+
+            Podemos formatear las imagenes dando valores a las margenes laterales (right - left), para facilitar su visualización.<br>
+            Margin : permite definir de forma simultanea los cuatro márgenes.<br>
+            Valores ( medida | porcentaje | auto ) {1, 4} | inherit.<br>
+            La notación {1, 4} de la definición anterior significa que la propiedad margin admite entre uno y cuatro valores, con el 
+            siguiente significado: <br>
+            ▪ Si solo se indica un valor, todos los márgenes tienen ese valor.<br>
+            ▪ Si se indican dos valores, el primero se asigna al margen superior e inferior y el segundo se asigna a los márgenes izquierdo
+             y derecho.<br>
+            ▪ Si se indican tres valores, el primero se asigna al margen superior, el tercero se asigna al margen inferior y el segundo 
+            valor se asigna los márgenes izquierdo y derecho.<br>
+            ▪ Si se indican los cuatro valores, el orden de asignación es: margen superior, margen derecho, margen inferior y margen 
+            izquierdo.<br>
+
+            El comportamiento de los márgenes verticales es más complejo de lo que se puede imaginar. Cuando se juntan dos o más márgenes 
+            verticales, se fusionan de forma automática y la altura del nuevo margen será igual a la altura del margen más alto de los que 
+            se han fusionado. De la misma forma, si un elemento está contenido dentro de otro elemento, sus márgenes verticales se fusionan
+            y resultan en un nuevo margen de la misma altura que el mayor margen de los que se han fusionado.
+
+
+            <p class="margenesYrelleno">
+                <a href="../img/PropiedadesMargenes.JPG" hreflang="es" type="image/jpg" media="screen">Propiedades para las margenes</a>
+            </p>
+
+            <p class="margenesYrelleno">
+                <a href="../img/MargenesVerticales.JPG" hreflang="es" type="image/jpg" media="screen">Apliación de las margenes</a>
+            </p>
+
+            <p class="margenesYrelleno">
+                <a href="../img/FusionMargenesVerticales.JPG" hreflang="es" type="image/jpg" screen="media">Fusión de margenes verticales</a>
+            </p>
+        </p>
+        <p class="margenesYrelleno1">
+            CSS define cuatro propiedades para controlar cada uno de los espacios de relleno horizontales y verticales de un elemento.<br>
+            Valores : medida | porcentaje | inherit. <br>
+            Como sucede con la propiedad margin, CSS también define una propiedad de tipo "shorthand" para establecer los cuatro rellenos 
+            de un elemento de forma directa. <br>
+            Padding : permite definir de forma simultanea los cuatro márgenes.<br>
+            Valores : ( medida | porcentaje ) {1, 4} | inherit.<br>
+            la notación {1, 4} tiene el mismo comportamiento que con las margenes.
+
+            <p class="margenesYrelleno1">
+                <a href="../img/PropiedadesRellenos.JPG" hreflang="es" type="image/jpg" media="screen">Propiedades Rellenos</a>
+            </p>
         </p>
     </body>
 </html>
