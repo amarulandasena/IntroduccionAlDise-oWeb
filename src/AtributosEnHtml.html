@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="es" manifest="AtributosEnHtml.appcache">
+    <head>
+        <base href="http://127.0.0.1:5500/src/AtributosEnHtml.html" target="_blank">
+        <meta charset="UTF-8">
+        <meta name="application-name" content="Introducción al diseño web">
+        <meta name="author" content="Andres Marulanda">
+        <meta name="description" content="Aplicación para el aprendizaje del lenguaje HTML junto con CSS3">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="keywords" content="diseño, web, html5, css3, aprendizaje, enseñanza, curso, básico">
+        <meta name="http-equiv" content="UTF-8">
+
+        <link rel="stylesheet" href="../css/HojaEstilos1.css" hreflang="es" type="text/css" media="screen">
+
+        <title>
+            Atributos en HTML
+        </title>
+    </head>
+
+    <body>
+        <h2>
+            ATRIBUTOS EN HTML.
+        </h2>
+        <p>
+            Las etiquetas del lenguaje HTML5, permiten definir un documento web, pero también muchas de ellas tienen una serie de 
+            atributos u “opciones”, dependiendo del tipo de etiqueta que se inserte. Los atributos permiten especificar en la mayoría 
+            de ocasiones el correcto funcionamiento de la etiqueta, supongamos un enlace a documento, para realizar este enlace se emplea 
+            la etiqueta “a”, pero si no se empleara un atributo para especificar donde apunta dicho enlace, la etiqueta por sí solo no 
+            serviría de nada
+        </p>
+        <p>
+            A la hora de utilizar los atributos el W3C recomienda que los valores que se asignan a los mismos, se especifiquen entre 
+            comillas dobles (“valor”). También como pequeña recomendación, aunque tanto los atributos como los valores, se permiten 
+            especificarlos en mayúsculas o minúsculas indiferentemente, se recomienda especificar los mismos en letras minúsculas, de esta 
+            forma si aparecieran nuevas versiones de (X)HTML, se cumpliría directamente con el estándar.
+        </p>
+
+        <h2>
+            ATRIBUTOS GLOBALES.
+        </h2>
+        <p>
+            Los atributos globales se pueden aplicar a todas las etiquetas del lenguaje HTML5, permitiendo dar sentido y significado a las 
+            mismas dentro del contexto en el que se apliquen.
+        </p>
+        <p>
+            <strong>Acceskey: </strong>El atributo permite especificar un acceso directo para establecer el foco o activar el elemento 
+            sobre el que se aplica.
+        </p>
+        <p>
+            <q>
+                <b>accesskey="c" href="#" target="_self"</b>
+            </q>
+        </p>
+
+        <p>
+            <strong>Class: </strong>El atributo permite especificar un nombre o varios de clase6, para el elemento web sobre el cual se 
+            aplica el atributo.
+        </p>
+
+        <p>
+            <strong>Contenteditable: </strong> El cual permite editar en línea el elemento sobre el cual se aplica. El atributo puede 
+            tener cuatro valores, ninguno “”, verdadero (“true”), siendo estos últimos de resultados idénticos, es decir da igual aplicar 
+            ninguno que verdadero, también dispone de falso (“false”), y por ultimo heredado (“inherit”), que recogerá el valor del 
+            elemento padre. Por ejemplo:
+        </p>
+        <p contenteditable="true">
+            Este es un texto que se puede editar en línea. Sin necesidad de acceder al código fuente.
+        </p>
+
+        <p>
+            <em> Data-*: </em> Se utiliza para almacenar datos privados que pueda utilizar el documento u aplicación web. Este tipo de 
+            atributo permite la posibilidad de insertar datos personalizados en cualquiera de los elementos HTML del documento web.
+            Este tipo de dato, luego pueden ser utilizados por lenguajes como javascript, para interactuar con el usuario en el documento 
+            web que se visualiza. Por ejemplo:
+        </p>
+        <p>
+            <pre>
+                ul
+                    li data-tipo-curso="web" > Curso práctico de HTML /li
+                    li data-tipo-curso="ofimática" > Curso práctico de Word /li
+                /ul
+            </pre>
+        </p>
+
+        <p>
+            <em>Dir: </em> Permite especificar la dirección del texto contenido dentro de un elemento HTML. Los posibles valores del 
+            atributo son: ltr, que especifica que el texto sea escrito de izquierda a derecha, rtl, que indica que el texto sea escrito de
+            derecha a izquierda, y por último auto, que deja al navegador la elección de la dirección del texto, basándose en el contenido 
+            del elemento. Por ejemplo:
+        </p>
+        <p dir="rtl"> <small>Texto escrito de derecha a izquierda.</small> </p>
+        <p dir="auto"> <small>Texto escrito en auto.</small>  </p>
+
+        <p>
+            <em>Draggable: </em> Permite especificar si el elemento sobre el cual se aplica el atributo es un elemento, sobre el cual se 
+            puede aplicar la acción de arrastrar y soltar (“drag and drop”). Los valores posibles para el atributo son: true, que 
+            especifica que el elemento se puede arrastrar, false, indica que no se puede arrastrar el elemento y por último auto, indicando
+            que se deja al navegador la elección de posibilidad de arrastrar o no el elemento. Por ejemplo:
+        </p>
+        <p draggable="true"> Texto que se puede arrastrar y soltar. </p>
+        <p draggable="false"> Texto que no se puede arrastrar y soltar. </p>
+
+        <p>
+            <mark>Hidden:</mark> El atributo hidden, permite especificar que un elemento o bien ya no existe, o no es relevante. Es un 
+            atributo booleano, es decir no dispone de valores los cuales aplicar al atributo. Si aparece en un elemento significa que está
+            activado el atributo y el elemento no será mostrado en el navegador. Por ejemplo: 
+        </p>
+        <p hidden> Texto que ya no se visualizará. </p>
+    </body>
+</html>
