@@ -60,3 +60,45 @@ footer {
     margin-right: 20px;
     margin-bottom: 10px;
 }
+
+/* Selector de clase para la explicación de las propiedades para el ancho y el color de los bordes*/
+.bordesYColor {
+    border-top-width: 1em;
+    border-right-width: 1em;
+    border-bottom-width: thin;
+    border-left-width: thick;
+
+    border-top-color: #CC0000;
+    border-right-color: blue;
+    border-bottom-color: rgb(165, 218, 165);
+    border-left-color: rgb(71, 66, 66);
+
+    border-top-style: dotted; /* ......... */
+    border-right-style: dashed; /* - - - - - - - -*/
+    border-bottom-style: solid;
+    border-left-style: double; 
+
+    text-align: justify;
+}
+
+/* Selector de Id para la propiedad shorthand del ancho de los bordes*/
+#bordesYColor1 {
+    border-width: 1px 2px thick thin;
+    border-color: blue #470505 rgb(55, 187, 72) blanchedalmond;
+    border-style: groove ridge inset outset;
+
+    text-align: justify;
+}
+
+/* Selector de clase para las propiedades shorthand de los bordes*/
+.bordesShort {
+    border-top: double rgb(71, 55, 168) thick;
+    border-right: solid rgb(160, 200, 150) thin;
+    border-bottom: dashed blue 1em;
+    border-left: dotted #CC0000 1em;
+
+}
+
+#bordesShort1 {
+    border: groove rgb(120, 45, 10) 2px;
+}
