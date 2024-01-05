@@ -102,3 +102,13 @@ footer {
 #bordesShort1 {
     border: groove rgb(120, 45, 10) 2px;
 }
+
+/* Selector de clase para darle solor al fondo del parrafo de explicación de la propiedad */
+.colorFondo {
+    background-color: rgb(132, 201, 178);
+}
+
+/* Selector de ID para la imagen de fondo de la explicación de la propiedad */
+#imagenFondo {
+    background-image: url(../img/imagenCss3.png);
+}
