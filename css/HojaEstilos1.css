@@ -1,14 +1,14 @@
 /* regla para los titulos*/
 h1 {
     font-size: 260%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia;
     font-weight: normal;
     color: darkred;
 }
 
 /* Selector de tipo o etiqueta**/
 p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana;
     margin-left: 20px;
     margin-right: 20px;
     text-align: justify;
@@ -16,9 +16,14 @@ p {
 
 h2 {
     font-size: 200%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Calibri;
     font-weight: normal;
     color: crimson;
+}
+
+h3 {
+    margin-left: 20px;
+    font-family: Calibri;
 }
 
 /** Selector de id */
