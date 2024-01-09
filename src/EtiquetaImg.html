@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="es" manifest="EtiquetaImg.appcache">
+    <head>
+        <base href="http://127.0.0.1:5500/src/EtiquetaImg.html" target="_blank">
+        <meta charset="UTF-8">
+        <meta name="application-name" content="Introducción al diseño web">
+        <meta name="author" content="Andres Marulanda">
+        <meta name="description" content="Aplicación para el aprendizaje del lenguaje HTML junto con CSS3">
+        <meta name="keywords" content="diseño, web, html5, css3, aprendizaje, enseñanza, curso, básico">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="http-equiv" content="UTF-8">
+
+        <link rel="stylesheet" href="../css/HojaEstilos1.css" hreflang="es" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/HojaEstilos3.css" hreflang="es" type="text/css" media="screen">
+
+        <title>
+            Etiqueta IMG
+        </title>
+    </head>
+    <body>
+        <h1>
+            ETIQUETA IMG
+        </h1>
+        <p>
+            Permite definir una imagen en el documento web. Técnicamente la imagen no es insertada dentro del documento, ya que lo que 
+            se hace es realizar un enlace a la misma, encargándose el navegador de situarla en el documento. Entre los formatos más 
+            populares de imagen aceptados, sin duda se encuentran el formato JPEG, y el formato PNG. Aunque se pueden utilizar muchos más 
+            formatos.
+        </p>
+
+        <h2>
+            ATRIBUTOS.
+        </h2>
+        <p>
+            <mark>SRC:</mark> El atributo src, permite especificar el origen de la imagen, es decir su ubicación, bien mediante una ruta 
+            absoluta o relativa.
+        </p>
+        <p>
+            <strong>HEIGHT:</strong> El atributo height, permite especificar el alto de la imagen en pixeles. Siempre que se especifique 
+            el ancho y alto de la imagen, el navegador reservara el espacio correspondiente para la imagen cuando se produzca la carga del
+            documento. El especificar ancho y alto de la imagen, no significa que se realice una reducción o ampliación del tamaño en bytes
+            de la imagen, es decir la imagen se ha de leer completa, independientemente del tamaño especificado.
+        </p>
+        <p>
+            <em>WIDHT:</em> Permite especificar el ancho de visualización de la imagen, con un valor numérico en pixeles.
+        </p>
+        <p>
+            <u>ALT:</u> El atributo alt, permite especificar un texto alternativo para la imagen. Este texto alternativo es visualizado 
+            cuando se produce un error en el atributo src, la conexión fuese muy lenta o si el usuario utiliza un lector de pantalla.
+        </p>
+        <p>
+            <mark>ISMAP:</mark> permite indicar que la imagen que se está cargando es una imagen considerada como imagen de mapa de 
+            servidor, es decir una imagen que puede tener zonas seleccionables que sirven como enlaces. Es un atributo booleano, es decir 
+            no tiene valor asociado si aparece en una etiqueta de imagen, indica que la misma es un mapa de imagen. El atributo solo está 
+            permitido en caso de que la etiqueta de imagen sea descendiente de una etiqueta de enlace con una referencia valida de enlace.
+        </p>
+        <p>
+            <q>
+                [a href="valor"] [image src=" " height=" " width=" " alt=" " ismap] [/a]
+            </q>
+        </p>
+        <p>
+            <strong>USEMAP:</strong> permite especificar que la imagen utilice un mapa de imagen con zonas seleccionables, asociando la 
+            etiqueta con un mapa de imagen definido con la etiqueta map, estableciendo de esta forma las zonas seleccionables de la imagen.
+            El atributo no está permitido utilizarlo si la etiqueta de imagen es descendiente de una etiqueta de enlace o botón. comentamos
+            la sintaxis con la etiqueta asociada map:
+        </p>
+        <p>
+            <pre>
+                [img src=" " usemap="#NombreMapa"]
+
+                [map name="NombreMapa"]
+                    [area shape="rect" coords="0,0,82,116" href="valorEnlace" alt="valor"] 
+                    [area shape="circle" coords="90,58,3" href="valorEnlace" alt="valor"]
+                    [area shape="polygon" coords="124,58,8" href="valorEnlace" alt="valor"]
+                [/map]
+            </pre>
+        </p>
+        <p>
+            Aunque es muy recomendable utilizar programas que generen el código de las zonas, ya que las mismas se han de establecer 
+            mediante coordenadas de pixeles y por tanto es bastante tedioso establecerlas. Se ha de tener en cuenta que si se alterase una
+            vez creado el mapa de imagen, las características de la imagen se ha de volver a crear el mapa de imagen ya que las coordenadas
+            podrían haber variado con respecto a la imagen original.
+        </p>
+
+        <h2>
+            EJEMPLO 1.
+        </h2>
+        <img src="../img/imagenHtml5Css3.png" height="140px" width="200px" alt="Logos de HTML5 y CSS3"> 
+
+        <h2>
+            EJEMPLO 2, USO DE ISMAP.
+        </h2>
+        <a href="./ModeloDeCajas.html" hreflang="es" type="text/html" media="screen">
+            <img src="../img/ModeloDeCajas.png" heigt="400px" width="600px" alt="Modelo de Cajas en CSS">
+        </a>    
+    </body>
+</html>

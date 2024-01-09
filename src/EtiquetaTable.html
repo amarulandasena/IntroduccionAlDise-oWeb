@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" manifest="EtiquetaTable.appcache">
+    <head>
+        <base href="http://127.0.0.1:5500/src/EtiquetaTable.html" target="_blank">
+        <meta charset="UTF-8">
+        <meta name="application-name" content="Introducción al diseño web">
+        <meta name="author" content="Andres Marulanda">
+        <meta name="description" content="Aplicación para el aprendizaje del lenguaje HTML junto con CSS3">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="keywords" content="diseño, web, html5, css3, aprendizaje, enseñanza, curso, básico">
+        <meta name="http-equiv" content="UTF-8">
+
+        <link rel="stylesheet" href="../css/HojaEstilos1.css" hreflang="es" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/HojaEstilos3.css" hreflang="es" type="text/css" media="screen">
+
+        <title>
+            Etiqueta Table
+        </title>
+    </head>
+    <body>
+        <h1>
+            ETIQUETA BODY
+        </h1>
+        <p>
+            Permite definir tablas. Una tabla es una cuadricula de casillas o celdas, divididas en filas y columnas. Las tablas para 
+            componerlas se hace uso de otras etiquetas, las cuales no tienen sentido sino están situadas dentro de una etiqueta de tabla.
+            Estas etiquetas son las siguientes.
+        </p>
+        <img src="../img/etiquetasDeTabla.JPG" height="500px" width="600px" alt="Etiquetas de tabla">
+        <p>
+            Definición de una tabla sencilla: Para crear una tabla sencilla se ha de utilizar en primer lugar la etiqueta table, la cual 
+            define la tabla. Y dentro de ella se han de situar por cada fila una etiqueta tr, mientras que por cada casilla o celda dentro
+            de la fila, se puede utilizar una etiqueta th o td, dependiendo de que sea una casilla de cabecera o normal. Aunque en 
+            versiones anteriores de HTML, se pueden aplicar varios atributos a la etiqueta table, actualmente solo está permitido uno, 
+            el atributo border, al cual se le puede dar un valor de 0 o 1.
+        </p>
+        <table border="1">
+            <!--Título de la tabla-->
+            <caption>TABLA DE EJEMPLO 1</caption>  
+            <tbody>
+                <!--Fila 1-->
+                <tr>
+                    <!--Cabecera de la columna 1-->
+                    <th>Fila 1 / Columna 1</th>
+                    <!--Columna 2-->
+                    <th>Fila 1 / Columna 2</th>
+                    <!--Columna 3-->
+                    <th>Fila 1 / Columna 3</th>
+                </tr>
+                <!--Fila 2-->
+                <tr>
+                    <td>Fila 2 / Columna 1</td>
+                    <td>Fila 2 / Columna 2</td>
+                    <td>Fila 2 / Columna 3</td>
+                </tr>
+                <!--Fila 3-->
+                <tr>
+                    <td>Fila 3 / Columna 1</td>
+                    <td>Fila 3 / Columna 2</td>
+                    <td>Fila 3 / Columna 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

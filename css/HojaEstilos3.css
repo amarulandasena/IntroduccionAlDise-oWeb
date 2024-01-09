@@ -1,0 +1,4 @@
+/** Selector de etiqueta para la margen de las imagenes y las tablas */
+img, table {
+    margin-left: 20px;
+}
