@@ -201,5 +201,59 @@
             imagen no se pueda mostrar o contenga errores, el navegador mostrará el color indicado (que debería ser, en lo posible, 
             similar a la imagen) y la página no parecerá que contiene errores.
         </p>
+
+        <h3>
+            REPEAT.
+        </h3>
+        <p id="repetirImagen">
+            CSS introduce la propiedad background-repeat que permite controlar la forma de repetición de las imágenes de fondo. <br>
+            Valores: repeat | repeat-x | repeat-y | no-repeat | inherit.<br>
+            El valor repeat indica que la imagen se debe repetir en todas direcciones y por tanto, es el comportamiento por defecto. 
+            El valor no-repeat muestra una sola vez la imagen y no se repite en ninguna dirección. El valor repeat-x repite la imagen 
+            sólo horizontalmente y el valor repeat-y repite la imagen solamente de forma vertical.
+        </p>
+
+        <h3>
+            POSITION.
+        </h3>
+        <p class="posicion1">
+            CSS permite controlar la posición de la imagen dentro del fondo del elemento mediante la propiedad background-position.<br>
+            Valores: porcentaje | medida | left | center | right.<br>
+            porcentaje | medida | top | center | bottom.<br>
+            left | center | right.<br>
+            top | center | bottom. <br>
+            inherit.<br>    
+        </p>
+        <p class="posicion2">
+            La propiedad background-position permite indicar la distancia que se desplaza la imagen de fondo respecto de su posición 
+            original situada en la esquina superior izquierda. Si se indican dos porcentajes o dos medidas, el primero indica el 
+            desplazamiento horizontal y el segundo el desplazamiento vertical respecto del origen (situado en la esquina superior 
+            izquierda). Si solamente se indica un porcentaje o una medida, se considera que es el desplazamiento horizontal y al 
+            desplazamiento vertical se le asigna automáticamente el valor de 50%. <br>
+            top = left = 0%.<br>
+            center = 50%.<br>
+            bottom = right = 100%.<br>
+            Si se utilizan solamente palabras clave, el orden es indiferente y por tanto, es equivalente indicar top left y left top.<br>
+        </p>
+
+        <h3>
+            ATTACHMENT.
+        </h3>
+        <p>
+            Se puede indicar que el fondo permanezca fijo cuando la ventana del navegador se desplaza mediante las barras de scroll. Se 
+            trata de un comportamiento que en general no es deseable y que algunos navegadores no soportan correctamente. La propiedad 
+            que controla este comportamiento es background-attachment.<br>
+            Valores: Scroll | fixed | inherit.
+        </p>
+
+        <h3>
+            SHORTHAND: BACKGROUND.
+        </h3>
+        <p>
+            CSS define una propiedad de tipo "shorthand" para indicar todas las propiedades de los colores e imágenes de fondo de forma 
+            directa. La propiedad se denomina background y es la que generalmente se utiliza para establecer las propiedades del fondo de 
+            los elementos.<br>
+            Valores: color | image | repeat | position | inherit.
+        </p>
     </body>
 </html>

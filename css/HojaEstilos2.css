@@ -112,3 +112,27 @@ footer {
 #imagenFondo {
     background-image: url(../img/imagenCss3.png);
 }
+
+/* Selector de ID para la propiedad repeat de las imagenes */
+#repetirImagen {
+    background: url(../img/repeat.jpeg) no-repeat;
+    color: rgb(228, 11, 55);
+}
+
+/* Selectores de clase para la explcación del background position. */
+.posicion1 {
+    background-image: url(../img/posicion1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+}
+
+.posicion2{
+    background-image: url(../img/posicion2.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    color: rgb(5, 5, 85);
+
+    /* shorthand: background: #CC0000 URL repeat-x center 0% */
+}
+

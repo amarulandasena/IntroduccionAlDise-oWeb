@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es" manifest="PosicionamientoYVisualizacion.appcache">
+    <head>
+        <base href="http://127.0.0.1:5500/src/PosicionamientoYVisualizacion.html" target="_blank">
+        <meta charset="UTF-8">
+        <meta name="application-name" content="Introducción al diseño web">
+        <meta name="author" content="Andres Marulanda">
+        <meta name="description" content="Aplicación para el aprendizaje del lenguaje HTML junto con CSS3">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="keywords" content="diseño, web, html5, css3, aprenidzaje, enseñanza, curso, básico">
+        <meta name="http-equiv" content="UTF-8">
+
+        <link rel="stylesheet" href="../css/HojaEstilos1.css" hreflang="es" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/HojaEstilos2.css" hreflang="es" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/HojaEstilos3.css" hreflang="es" type="text/css" media="screen">
+
+        <title>
+            Posicionamiento y Visualización
+        </title>
+    </head>
+    <body>
+        <h1>
+            POSICIONAMIENTO Y VISUALIZACIÓN.
+        </h1>
+        <p>
+            Para cumplir con el modelo de cajas presentado en el capítulo anterior, los navegadores crean una caja para representar a cada 
+            elemento de la página HTML. Los factores que se tienen en cuenta para generar cada caja son:<br>
+            ▪ Las propiedades width y height de la caja (si están establecidas).<br>
+            ▪ El tipo de cada elemento HTML (elemento de bloque o elemento en línea).<br>
+            ▪ Posicionamiento de la caja (normal, relativo, absoluto, fijo o flotante).<br>
+            ▪ Las relaciones entre elementos (dónde se encuentra cada elemento, elementos descendientes, etc.)<br>
+            ▪ Otro tipo de información, como por ejemplo el tamaño de las imágenes y el tamaño de la ventana del navegador.
+        </p>
+
+        <h2>
+            TIPOS DE ELEMENTOS.
+        </h2>
+        <p>
+            Los elementos de bloque ("block elements" en inglés) siempre empiezan en una nueva línea y ocupan todo el espacio disponible 
+            hasta el final de la línea. Por su parte, los elementos en línea ("inline elements" en inglés) no empiezan necesariamente en 
+            nueva línea y sólo ocupan el espacio necesario para mostrar sus contenidos.<br>
+            Los párrafos son elementos de bloque y por ese motivo su caja empieza en una nueva línea y llega hasta el final de esa misma 
+            línea. Aunque los contenidos de texto del párrafo no son suficientes para ocupar toda la línea, el navegador reserva todo el 
+            espacio disponible en la primera línea.<br>
+            Los enlaces son elementos en línea, por lo que su caja sólo ocupa el espacio necesario para mostrar sus contenidos. Si después
+            de este elemento se incluye otro elemento en línea (por ejemplo otro enlace o una imagen) el navegador mostraría los dos 
+            elementos en la misma línea, ya que existe espacio suficiente.<br>
+            los elementos de bloque no pueden insertarse dentro de elementos en línea y tan sólo pueden aparecer dentro de otros elementos 
+            de bloque. En cambio, un elemento en línea puede aparecer tanto dentro de un elemento de bloque como dentro de otro elemento en
+            línea.<br>
+            Los elementos en línea definidos por HTML son: a, abbr, acronym, b, basefont, bdo, big, br, cite, code, dfn, em, font, i, img, 
+            input, kbd, label, q, s, samp, select, small, span, strike, strong, sub, sup, textarea, tt, u, var.<br>
+            Los elementos de bloque definidos por HTML son: address, blockquote, center, dir, div, dl, fieldset, form, h1, h2, h3, h4, h5, 
+            h6, hr, isindex, menu, noframes, noscript, ol, p, pre, table, ul.<br>
+            Los siguientes elementos también se considera que son de bloque: dd, dt, frameset, li, tbody, td, tfoot, th, thead, tr.<br>
+            Los siguientes elementos pueden ser en línea y de bloque según las circunstancias: button, del, iframe, ins, map, object, script.
+        </p>
+        <p>
+            <a href="../img/ElementosDeLineaYDeBloque.JPG" type="image/JPG" media="scree">Elementos de bloque y en línea.</a>
+        </p>
+    </body>
+</html>
