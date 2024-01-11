@@ -1,4 +1,19 @@
-/** Selector de etiqueta para la margen de las imagenes y las tablas */
-img, table {
+/** Selectores de etiqueta para dar formato a los elementos que componen una tabla*/
+img {
     margin-left: 20px;
+    border: 2px ridge rgb(12, 12, 65);
+}
+
+table {
+    margin-left: 20px;
+    border-width: 3px;
+    border-style: dashed;
+    border-color:rgb(64, 7, 117);
+    border-collapse: separate;
+    border-spacing: 15px 10px; /** Horizontal - Vertical */
+}
+
+td, th {
+    border: 1px dotted rgb(60, 10, 100);
+    text-align: center;
 }
