@@ -35,3 +35,15 @@ img.desplazadaAbsoluta {
     padding: 10px 10px;
     position: relative;
 }
+
+/* Selectores de clase para dar formato a elementos y contenido encerrados por las etiquetas Div y Span */
+.formatoDiv {
+    border: 1px outset rgb(56, 22, 56);
+    background-color: rgb(241, 235, 235);
+}
+
+span {
+    color:rgb(78, 10, 10);
+    font-family: Cochin;
+    font-weight: 200;
+}

@@ -7,7 +7,7 @@ h1 {
 }
 
 /* Selector de tipo o etiqueta**/
-p {
+p, ul, ol, dl {
     font-family: Verdana;
     margin-left: 20px;
     margin-right: 20px;

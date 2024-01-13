@@ -18,6 +18,132 @@
         </title>
     </head>
     <body>
+        <h1>
+            ETIQUETAS UL Y OL.
+        </h1>
 
+        <h2>
+            ETIQUETA UL.
+        </h2>
+        <p>
+            Permite definir una lista desordenada (“Unordered List”). Esta etiqueta es a su vez contenedora de otras etiquetas, siendo 
+            estas últimas las que componen cada uno de los elementos de los que está compuesta la lista. Para especificar un elemento en 
+            la lista se ha de utilizar la etiqueta li /li, en la que se ha de especificar el texto que compone el elemento de la lista.
+            Por ejemplo:
+        </p>
+        <h3>
+            Lista sencilla.
+        </h3>
+        <ul>
+            <li>Cuarto.</li>
+            <li>Segundo.</li>
+            <li>Tercero.</li>
+            <li>Primero.</li>
+        </ul>
+        <h3>
+            Lista anidada.
+        </h3>
+        <ul>
+            <li>Uno.</li>
+            <li>Dos.</li>
+            <li>Tres.</li>
+            <ul>
+                <li>Tres.Uno.</li>
+                <li>Tres.Dos.</li>
+                <li>Tres.Tres.</li>
+            </ul>
+            <li>Cuatro.</li>
+        </ul>
+
+        <h2>
+            ETIQUETA OL.
+        </h2>
+        <p>
+            Permite definir listas o viñetas ordenadas (“Ordered List”), bien con numeración o alfabéticamente. Esta etiqueta es a su vez 
+            contenedora de otras etiquetas, siendo estas últimas las que componen cada uno de los elementos de los que está compuesta la 
+            lista.<br>
+            Para especificar un elemento en la lista se ha de utilizar la etiqueta li /li, en la que se ha de especificar el texto que 
+            compone el elemento de la lista.
+        </p>
+        <p>
+            <mark>Type:</mark> permite especificar el tipo de orden que se de aplicar a la lista, estableciendo de esta forma que la lista 
+            se represente mediante diferentes tipos de numeración.<br>
+            Valores: 1 | a | A | i | I.<br>
+            <mark>Start:</mark> permite indicar el valor de inicio, por el cual ha de comenzar la lista ordenada, siendo este un valor 
+            numérico, en caso de ser la lista ordenada de forma alfabética, el valor de inicio que se exprese, se corresponderá con el 
+            orden el abecedario ASCII correspondiente.<br>
+            <mark>Reversed:</mark> permite indicar que la numeración u orden que se haya establecido se represente de forma inversa, si 
+            tuviéramos una lista con valor de inicio 1, 2, 3, sucesivamente, su representación al encontrarse este atributo seria 3,2,1.
+            Es un atributo con valor booleano, en caso de aparecer el atributo en la etiqueta se aplica el valor.<br>
+            Por ejemplo: 
+        </p>
+        <h3>
+            Lista sencilla con numeración romana.
+        </h3>
+        <ol type="I" start="10" >
+            <li>Perro.</li>
+            <li>Gato.</li>
+            <li>Caballo.</li>
+            <li>Conejo.</li>
+        </ol>
+        <h3>
+            Lista anidada con diferentes tipos de numeración.
+        </h3>
+        <ol reversed>
+           <li>Fútbol.</li> 
+           
+           <ol type="a">
+                <li>Profesional.</li>
+                <li>Ascenso.</li>
+                <li>Sub 23.</li>
+                <li>Sub 20.</li>
+           </ol>
+           
+           <li>Baloncesto.</li>
+           <li>Voleyball.</li>
+           <li>Ciclismo.</li>
+           
+           <ol type="A">
+                <li>Ruta.</li>
+                <li>Pista.</li>
+                <li>Bicicros.</li>
+           </ol>
+        </ol>
+
+        <h2>
+            ETIQUETA DL.
+        </h2>
+        <p>
+            Permite definir lo que se denominan, listas de definición, las cuales a su vez están compuestas por un término, y una definición.
+            Para realizar la lista se utilizan dos etiquetas más, la primera es dt /dt, que permite especificar el termino en la lista. Y 
+            otra etiqueta  dd /dd, que permite especificar la definición. Por ejemplo:
+        </p>
+        <h3>
+            Tipos de servicios de informática en la nube.
+        </h3>
+        <dl>
+            <dt>IaaS:</dt>
+            <dd>
+                Infraestructura como servicio, proporciona a una empresa su infraestructura informática básica a través de Internet, 
+                incluidas las redes, los servidores y el almacenamiento, normalmente basado en un sistema de pago por los servicios 
+                prestados. Desde el punto de vista del usuario, el uso de servicios basados en la nube es simplemente una cuestión de 
+                iniciar sesión de forma segura en la aplicación a través de Internet, lo cual puede hacerse a través de cualquier 
+                dispositivo conectado, como un smartphone, una tableta o un ordenador.
+            </dd>
+            <dt>SaaS:</dt>
+            <dd>
+                Software como servicio, es una forma de ofrecer aplicaciones de software a través de Internet, normalmente por suscripción y a petición. El 
+                proveedor de la nube se encarga del alojamiento y de toda la infraestructura de TI, así como del mantenimiento y la 
+                seguridad. Los servicios de SaaS utilizan una arquitectura de nube multiusuario, lo que significa que todos los usuarios y
+                las aplicaciones comparten una infraestructura común que se mantiene de forma centralizada.
+            </dd>
+            <dt>PaaS:</dt>
+            <dd>
+                Plataforma como servicio, amplía el modelo de IaaS con un conjunto de servicios basados en la nube que permite a los 
+                desarrolladores y usuarios empresariales crear e implementar aplicaciones fáciles de utilizar de forma rápida e intuitiva.
+                Todo esto tiene lugar sin necesidad de comprar o gestionar ningún hardware, ni de tener que instalar o actualizar ningún 
+                software, ya que el hardware y el software necesarios los mantiene la empresa de la nube que ejecuta la aplicación.
+            </dd>
+        </dl>
     </body>
 </html>
