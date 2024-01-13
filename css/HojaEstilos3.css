@@ -17,3 +17,21 @@ td, th {
     border: 1px dotted rgb(60, 10, 100);
     text-align: center;
 }
+
+/* Selector de clase solo para los elementos de tipo img */
+img.desplazada {
+    position: relative;
+    top: 20px;
+} 
+
+img.desplazadaAbsoluta {
+    position: absolute;
+    left: 300px;
+}
+
+/* Selector de ID para el contenedor de una imagen que será posicionada de manera absoluta */
+#contenedorDesplazada {
+    border: inset rgb(51, 47, 47) 2px;
+    padding: 10px 10px;
+    position: relative;
+}

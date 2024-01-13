@@ -58,5 +58,133 @@
         <p>
             <a href="../img/ElementosDeLineaYDeBloque.JPG" type="image/JPG" media="scree">Elementos de bloque y en línea.</a>
         </p>
+
+        <h2>
+            POSICIONAMIENTO.
+        </h2>
+        <p>
+            Los navegadores crean y posicionan de forma automática todas las cajas que forman cada página HTML. No obstante, CSS permite
+            al diseñador modificar la posición en la que se muestra cada caja.<br>
+            El estándar de CSS define cinco modelos diferentes para posicionar una caja:<br>
+            ▪ <strong>Posicionamiento normal o estático:</strong> se trata del posicionamiento que utilizan los navegadores si no se indica lo contrario.<br>
+            ▪ <strong>Posicionamiento relativo:</strong>  variante del posicionamiento normal que consiste en posicionar una caja según el posicionamiento 
+            normal y después desplazarla respecto de su posición original.<br>
+            ▪ <strong>Posicionamiento absoluto:</strong> la posición de una caja se establece de forma absoluta respecto de su elemento contenedor y el 
+            resto de elementos de la página ignoran la nueva posición del elemento.<br>
+            ▪ <strong>Posicionamiento fijo:</strong> variante del posicionamiento absoluto que convierte una caja en un elemento inamovible, de forma que 
+            su posición en la pantalla siempre es la misma independientemente del resto de elementos e independientemente de si el usuario
+            sube o baja la página en la ventana del navegador.<br>
+            ▪ <strong>Posicionamiento flotante:</strong> se trata del modelo más especial de posicionamiento, ya que desplaza las cajas todo lo posible 
+            hacia la izquierda o hacia la derecha de la línea en la que se encuentran.
+        </p>
+        <p>
+            <strong>position</strong><br>
+            Valores: static | relative | absolute | fixed | inherit.<br>
+            ° <em>static:</em> corresponde al posicionamiento normal o estático. Si se utiliza este valor, se ignoran los valores de las propiedades 
+            top, right, bottom y left que se verán a continuación.<br>
+            ° <em>relative:</em> corresponde al posicionamiento relativo. El desplazamiento de la caja se controla con las propiedades top, 
+            right, bottom y left.<br>
+            ° <em>absolute:</em> corresponde al posicionamiento absoluto. El desplazamiento de la caja también se controla con las propiedades
+            top, right, bottom y left, pero su interpretación es mucho más compleja, ya que el origen de coordenadas del desplazamiento 
+            depende del posicionamiento de su elemento contenedor.<br>
+            ° <em>fixed:</em> corresponde al posicionamiento fijo. El desplazamiento se establece de la misma forma que en el posicionamiento
+            absoluto, pero en este caso el elemento permanece inamovible en la pantalla.
+        </p>
+        <p>
+            Cuando se posiciona una caja también es necesario desplazarla respecto de su posición original o respecto de otro origen de 
+            coordenadas. CSS define cuatro propiedades llamadas top, right, bottom y left para controlar el desplazamiento de las cajas
+            posicionadas:<br>
+            Top | right | bottom | left.<br>
+            Valores: medida | porcentaje | auto | inherit.<br>
+            En el caso del posicionamiento relativo, cada una de estas propiedades indica el desplazamiento del elemento desde la posición 
+            original de su borde superior/derecho/ inferior/izquierdo. Si el posicionamiento es absoluto, las propiedades indican el 
+            desplazamiento del elemento respecto del borde superior/derecho/inferior/izquierdo
+            de su primer elemento padre posicionado.
+        </p>
+
+        <h3>
+            POSICIONAMIENTO NORMAL.
+        </h3>
+        <p>
+            <img src="../img/PosicionamientoNormal.JPG" width="300px" height="200px" alt="posicionamiento normal" >
+        </p>
+        <p>
+            El posicionamiento normal o estático es el modelo que utilizan por defecto los navegadores para mostrar los elementos de las 
+            páginas. En este modelo, ninguna caja se desplaza respecto de su posición original, por lo que sólo se tiene en cuenta si el
+            elemento es de bloque o en línea.<br>
+            Los elementos de bloque forman lo que CSS denomina "contextos de formato de bloque". las cajas se muestran una debajo de otra 
+            comenzando desde el principio del elemento contenedor.<br>
+            Si un elemento se encuentra dentro de otro, el elemento padre se llama "elemento contenedor" y determina tanto la posición 
+            como el tamaño de todas sus cajas interiores.<br>
+            Los elementos en línea forman los "contextos de formato en línea". las cajas se muestran una detrás de otra de forma horizontal
+            comenzando desde la posición más a la izquierda de su elemento contenedor.<br>
+        </p>
+        <p>
+            <img src="../img/PosicionamientoNormal1.JPG" width="300px" height="200px" alt="posicionamiento normal">
+        </p>
+
+        <h3>
+            POSICIONAMIENTO RELATIVO.
+        </h3>
+        <p>
+            <img class="desplazada" src="../img/PosicionamientoRelativo.JPG" width="300px" heigt="200px" alt="posicionamiento relativo">
+            <img src="../img/PosicionamientoRelativo1.JPG" width="300px" heigt="200px" alt="posicionamiento relativo">
+            <img src="../img/PosicionamientoRelativo2.JPG" width="300px" height="200px" alt="posiconamiento relativo">
+        </p>
+        <p>
+            El posicionamiento relativo permite desplazar una caja respecto de su posición original establecida mediante el posicionamiento
+            normal. El desplazamiento de la caja se controla con las propiedades top, right, bottom y left.<br>
+            El desplazamiento de una caja no afecta al resto de cajas adyacentes, que se muestran en la misma posición que si la caja 
+            desplazada no se hubiera movido de su posición original.<br>
+            La propiedad left desplaza la caja hacia su derecha, la propiedad right la desplaza hacia su izquierda, la posición top
+            desplaza la caja de forma descendente y la propiedad bottom desplaza la caja de forma ascendente. Si se utilizan valores 
+            negativos en estas propiedades, su efecto es justamente el inverso.<br>
+            left = -right.<br>
+            Si tanto left como right tienen valores distintos de auto, uno de los dos valores se tiene que ignorar porque son mutuamente 
+            excluyentes. Para determinar la propiedad que se tiene en cuenta, se considera el valor de la propiedad direction.<br>
+            Si el valor de direction es ltr, y las propiedades left y right tienen valores distintos de auto, se ignora la propiedad right
+            y sólo se tiene en cuenta el valor de la propiedad left. De la misma forma, si el valor de direction es rtl, se ignora el valor
+            de left y sólo se tiene en cuenta el valor de right.<br>
+            El resto de imágenes no varían su posición y por tanto no ocupan el hueco dejado por la primera imagen, ya que el 
+            posicionamiento relativo no influye en el resto de elementos de la página.<br>
+        </p>
+
+        <h3>
+            POSICIONAMIENTO ABSOLUTO.
+        </h3>
+        <p>
+            <img class="desplazadaAbsoluta" src="../img/PosicionamientoAbsoluto.JPG" width="300px" height="200px" alt="posicionamiento absoluto">
+            <img src="../img/PosicionamientoAbsoluto1.JPG" width="300px" height="200px" alt="posicionamiento absoluto">
+        </p>
+        <p>
+            El posicionamiento absoluto se emplea para establecer de forma precisa la posición en la que se muestra la caja de un elemento.
+            La nueva posición de la caja se indica mediante las propiedades top, right, bottom y left. La interpretación de los valores de 
+            estas propiedades es mucho más compleja que en el posicionamiento relativo, ya que en este caso dependen del posicionamiento 
+            del elemento contenedor.<br>
+            Cuando una caja se posiciona de forma absoluta, el resto de elementos de la página la ignoran y ocupan el lugar original 
+            ocupado por la caja posicionada.<br>
+            En el estándar de CSS, esta característica de las cajas posicionadas de forma absoluta se explica como que la caja sale por 
+            completo del flujo normal del documento. De hecho, las cajas posicionadas de forma absoluta parece que estan en un nivel 
+            diferente al resto de elementos de la página.
+        </p>
+        <p>
+            Determinar el origen de coordenadas a partir del cual se desplaza una caja posicionada de forma absoluta es un proceso complejo
+            que se compone de los siguientes pasos:
+            ▪ Se buscan todos los elementos contenedores de la caja hasta llegar al elemento
+            body de la página.<br>
+            ▪ Se recorren todos los elementos contenedores empezando por el más cercano a la caja y llegando hasta el body.
+            ▪ De todos ellos, el navegador se queda con el primer elemento contenedor que esté posicionado de cualquier forma diferente a 
+            position: static <br>
+            ▪ La esquina superior izquierda de ese elemento contenedor posicionado es el origen de coordenadas.
+        </p>
+        <p id="contenedorDesplazada">
+            <img class="desplazadaAbsoluta" src="../img/PosicionamientoAbsoluto2.JPG" width="300px" height="200px" alt="posicionamiento absoluto">
+            <img src="../img/PosicionamientoAbsoluto3.JPG" width="300px" height="200px" alt="posicionamiento absoluto">
+        </p>
+        <p>
+            Si se quiere posicionar un elemento de forma absoluta respecto de su elemento contenedor, es imprescindible posicionar el 
+            elemento contenedor. Para ello, sólo es necesario añadir la propiedad position: relative, por lo que no es obligatorio 
+            desplazar el elemento contenedor respecto de su posición original.
+        </p>
     </body>
 </html>
