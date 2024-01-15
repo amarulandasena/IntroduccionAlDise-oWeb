@@ -19,9 +19,9 @@
     </head>
     <body>
         <div class="formatoDiv">
-            <h1>
+            <h2>
                 ETIQUETAS DIV Y SPAN.
-            </h1>
+            </h2>
             <p>
                 El lenguaje HTML5, define mediante etiquetas elementos dentro de un documento web. Estos elementos pueden ser de dos tipos 
                 denominados, elementos de bloque y elementos en línea. Su nombre es debido a la forma en que ocupan espacio dentro del 
@@ -45,5 +45,129 @@
                 de arranque o power on self test (POST).
             </p>
         </div>
+        <h2>
+            ETIQUETA HEADER.
+        </h2>
+        <p>
+            Es la primera de las nuevas etiquetas de HTML5, incluidas dentro de la denominación de “web semántica”, que consiste en la 
+            utilización de estas etiquetas para la estructura del documento, dotando al documento de sentido en su estructura y formato 
+            por el nombre de las etiquetas. La finalidad de la etiqueta es la de especificar un encabezado dentro de un documento o 
+            sección. Se suele utilizar como contenedor para el contenido de introducción o para enlaces de navegación.<br>
+            Se pueden utilizar varios encabezados con esta etiqueta dentro de otras etiquetas semánticas. Siempre y cuando estas no sean 
+            encabezados, pies de documento, o etiquetas de tipo encabezado como la de dirección. Por ejemplo:
+        </p>
+        <header>
+            <h3>
+                Introducción a POO en Java: Objetos y clases.
+            </h3>
+            <p>
+                ¿Alguna vez te has preguntado cómo los programas de software gestionan y organizan la información? ¿Qué sucede internamente
+                cuando interactúas con una aplicación en tu dispositivo? La respuesta se encuentra en la Programación Orientada a Objetos,
+                un enfoque fundamental en el mundo de la programación. Nuestro objetivo con este artículo y los sucesivos, es explorar a 
+                fondo este concepto centrándonos en Java, un lenguaje de programación ampliamente utilizado.
+            </p>
+        </header>
+        <section>
+            <header>
+                <h3>
+                    Introducción (Uso dentro de la etiqueta section).
+                </h3> 
+            </header>
+            <p>
+                En el complejo mundo de la programación, una de las metodologías más influyentes es la Programación Orientada a Objetos 
+                (POO). Esta metodología se ha convertido en un pilar fundamental para el desarrollo de software de alta calidad y 
+                eficiencia. Comenzaremos por comprender qué es la POO y por qué es tan importante en el desarrollo de software moderno. 
+                Luego, nos adentraremos en el mundo de los objetos en Java, examinando sus conceptos fundamentales y explorando ejemplos 
+                prácticos que te ayudarán a entender cómo funcionan.<br>
+                Posteriormente, nos sumergiremos en las clases en Java, que son los moldes para la creación de objetos. Analizaremos los 
+                conceptos esenciales relacionados con las clases y proporcionaremos ejemplos prácticos que te mostrarán cómo definir y 
+                utilizar clases en tus programas. La POO se basa en el concepto de “objetos”, que son las piezas fundamentales que permiten
+                modelar el mundo real dentro de un programa. ¡Acompáñanos en este artículo y descubre cómo esta metodología revoluciona 
+                la forma en la que creamos software!
+            </p>
+        </section>
+
+        <h2>
+            ETIQUETA NAV.
+        </h2>
+        <p>
+            Perteneciente también a las nuevas etiquetas semánticas. Permite especificar un conjunto de vínculos o enlaces de navegación.
+            No significa que todos los enlaces de navegación por los documentos del sitio, hayan de estar situados en el contenido de la 
+            etiqueta. Pero es una forma de agrupar opciones de navegación tipo menú o mapas de enlaces del sitio. (El ejemplo lo encontramos
+            en Cuerpo del Documento 1, donde agruparemos un conjunto de etiquetas de enlace.).
+        </p>
+        
+        <h2>
+            ETIQUETA SECTION.
+        </h2>
+        <p>
+            Pertenece también a las etiquetas semánticas, nuevas en HTML5, y permite definir secciones en el documento como pueden ser 
+            capítulos, encabezados, pies, o cualquier otro tipo de sección en el documento.
+        </p>
+
+        <h2>
+            ETIQUETA ARTICLE.
+        </h2>
+        <p>
+            Permite especificar contenido independiente o autónomo. De forma que debería que ser posible distribuir el mismo 
+            independientemente del resto del documento web. Perteneciente también la etiqueta a las denominadas semánticas. Se indica que 
+            su posible utilización podría ser para mensajes de foros, noticias, artículos de blog, comentarios, etc.
+        </p>
+        <article>
+            <header>
+                ENCABEZADO DEL ARTICULO O BLOG.
+            </header>
+            <h3>
+                SUBTÍTULO O INTRODUCCIÓN.
+            </h3>
+            <p>
+                DESARROLLO DEL CONTENIDO DEL ARTÍCULO.
+            </p>
+        </article>
+
+        <h2>
+            ETIQUETA ASIDE.
+        </h2>
+        <p>
+            Permite definir contenido al margen del contenido principal, que mantenga relación con el mismo.
+        </p>
+        <p>
+            <img src="../img/EtiquetaSection.png" width="400px" height="300" alt="Etiquetas de estructura">
+        </p>
+
+        <h2>
+            ETIQUETA FIGURE.
+        </h2>
+        <p>
+            Permite especificar contenido autónomo como pueden ser ilustraciones, diagramas, fotos, listas de código, etc. Junto a la 
+            etiqueta, se suele utilizar otra etiqueta denominada figcaption /figcaption, la cual permite especificar una denominación o 
+            nombre para la figura insertada. Por ejemplo:
+        </p>
+        <figure>
+            <figcaption>ESTRUCTURA BÁSICA DE UN DOCUMENTO HTML.</figcaption>
+            <img src="../img/CodigoHtml5.png" width="500px" height="350px" alt="Código en HTML">
+        </figure>
+
+        <h2>
+            ETIQUETA FOOTER.
+        </h2>
+        <p>
+            Permite definir un pie de página de un documento o sección. Se recomienda que el contenido de la etiqueta ha de guardar 
+            relación con el elemento que la contiene. Si se utiliza a pie de página, suele contener información relativa al autor del
+            documento, copyright, enlaces, términos de uso, información de contacto, etc. Un documento web, puede contener varias etiquetas
+            footer situadas en diferentes sitios, correspondiéndose con secciones, artículos, etc. Por ejemplo:
+        </p>
+        <footer>
+            <pre>
+                Autor: Andres Felipe Marulanda.
+                Dirección: Calle siempre Viva, No. 123.
+                Teléfono: +573008888888.
+                Ciudad: Springfield.
+            </pre>
+        </footer>
+
+        <h2>
+            ETIQUETA TIME.
+        </h2>
     </body>
 </html>

@@ -47,3 +47,23 @@ span {
     font-family: Cochin;
     font-weight: 200;
 }
+
+/* Selectores de etiqueta para la explicación de los funcionamientos de las mismas */
+header {
+    border: outset 3px rgb(7, 68, 7);
+    margin-left: 20px;
+}
+
+nav { 
+    background-color: rgb(161, 201, 201);
+    margin-left: 20px;
+}
+
+section {
+    background-color: rgb(194, 186, 186); 
+    margin-left: 20px; 
+}
+
+figcaption {
+    margin-left: 20px;
+}
