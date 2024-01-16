@@ -67,3 +67,28 @@ section {
 figcaption {
     margin-left: 20px;
 }
+
+/* Selector para la explicación del posicionamiento flotante */ 
+.flotante {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+/* Selectores para la explicación de la propiedad clear */
+#limpio {
+    clear:left;
+}
+
+#ejemploClear {
+    border: dotted rgb(165, 12, 12) 1px;
+    clear:both;
+}
+
+.izquierda {
+    float:left;
+}
+
+.derecha {
+    float:right;
+}

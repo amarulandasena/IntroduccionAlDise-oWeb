@@ -66,16 +66,17 @@
             Los navegadores crean y posicionan de forma automática todas las cajas que forman cada página HTML. No obstante, CSS permite
             al diseñador modificar la posición en la que se muestra cada caja.<br>
             El estándar de CSS define cinco modelos diferentes para posicionar una caja:<br>
-            ▪ <strong>Posicionamiento normal o estático:</strong> se trata del posicionamiento que utilizan los navegadores si no se indica lo contrario.<br>
-            ▪ <strong>Posicionamiento relativo:</strong>  variante del posicionamiento normal que consiste en posicionar una caja según el posicionamiento 
-            normal y después desplazarla respecto de su posición original.<br>
-            ▪ <strong>Posicionamiento absoluto:</strong> la posición de una caja se establece de forma absoluta respecto de su elemento contenedor y el 
-            resto de elementos de la página ignoran la nueva posición del elemento.<br>
-            ▪ <strong>Posicionamiento fijo:</strong> variante del posicionamiento absoluto que convierte una caja en un elemento inamovible, de forma que 
-            su posición en la pantalla siempre es la misma independientemente del resto de elementos e independientemente de si el usuario
-            sube o baja la página en la ventana del navegador.<br>
-            ▪ <strong>Posicionamiento flotante:</strong> se trata del modelo más especial de posicionamiento, ya que desplaza las cajas todo lo posible 
-            hacia la izquierda o hacia la derecha de la línea en la que se encuentran.
+            ▪ <strong>Posicionamiento normal o estático:</strong> se trata del posicionamiento que utilizan los navegadores si no se indica
+            lo contrario.<br>
+            ▪ <strong>Posicionamiento relativo:</strong>  variante del posicionamiento normal que consiste en posicionar una caja según el 
+            posicionamiento normal y después desplazarla respecto de su posición original.<br>
+            ▪ <strong>Posicionamiento absoluto:</strong> la posición de una caja se establece de forma absoluta respecto de su elemento 
+            contenedor y el resto de elementos de la página ignoran la nueva posición del elemento.<br>
+            ▪ <strong>Posicionamiento fijo:</strong> variante del posicionamiento absoluto que convierte una caja en un elemento 
+            inamovible, de forma que su posición en la pantalla siempre es la misma independientemente del resto de elementos e 
+            independientemente de si el usuario sube o baja la página en la ventana del navegador.<br>
+            ▪ <strong>Posicionamiento flotante:</strong> se trata del modelo más especial de posicionamiento, ya que desplaza las cajas 
+            todo lo posible acia la izquierda o hacia la derecha de la línea en la que se encuentran.
         </p>
         <p>
             <strong>position</strong><br>
@@ -170,9 +171,8 @@
         <p>
             Determinar el origen de coordenadas a partir del cual se desplaza una caja posicionada de forma absoluta es un proceso complejo
             que se compone de los siguientes pasos:
-            ▪ Se buscan todos los elementos contenedores de la caja hasta llegar al elemento
-            body de la página.<br>
-            ▪ Se recorren todos los elementos contenedores empezando por el más cercano a la caja y llegando hasta el body.
+            ▪ Se buscan todos los elementos contenedores de la caja hasta llegar al elemento body de la página.<br>
+            ▪ Se recorren todos los elementos contenedores empezando por el más cercano a la caja y llegando hasta el body.<br>
             ▪ De todos ellos, el navegador se queda con el primer elemento contenedor que esté posicionado de cualquier forma diferente a 
             position: static <br>
             ▪ La esquina superior izquierda de ese elemento contenedor posicionado es el origen de coordenadas.
@@ -185,6 +185,92 @@
             Si se quiere posicionar un elemento de forma absoluta respecto de su elemento contenedor, es imprescindible posicionar el 
             elemento contenedor. Para ello, sólo es necesario añadir la propiedad position: relative, por lo que no es obligatorio 
             desplazar el elemento contenedor respecto de su posición original.
+        </p>
+
+        <h3>
+            POSICIONAMIENTO FIJO.
+        </h3>
+        <p>
+            Cuando una caja se posiciona de forma fija, la forma de obtener el origen de coordenadas para interpretar su desplazamiento es
+            idéntica al posicionamiento absoluto. La principal característica de una caja posicionada de forma fija es que su posición es
+            inamovible dentro de la ventana del navegador. El posicionamiento fijo hace que las cajas no modifiquen su posición ni aunque
+            el usuario suba o baje la página en la ventana de su navegador. Si la página se visualiza en un medio paginado (por ejemplo en 
+            una impresora) las cajas posicionadas de forma fija se repiten en todas las páginas.
+        </p>
+
+        <h3>
+            POSICIONAMIENTO FLOTANTE.
+        </h3>
+        <p>
+            Cuando una caja se posiciona con el modelo de posicionamiento flotante, automáticamente se convierte en una caja flotante, lo
+            que significa que se desplaza hasta la zona más a la izquierda o más a la derecha de la posición en la que originalmente se 
+            encontraba. Cuando se posiciona una caja de forma flotante, la caja deja de pertenecer al flujo normal de la página, lo que 
+            significa que el resto de cajas ocupan el lugar dejado por la caja flotante. Por ejemplo:
+        </p>
+        <div>
+            <img src="../img/PosicionamientoFlotante.JPG" width="300px" height="150px" alt="Posicionamiento flotante">
+            <img src="../img/PosicionamientoFlotante1.JPG" width="300px" height="150px" alt="Posicionamiento flotante">
+        </div>
+        <p>
+            La caja 1 es de tipo flotante, por lo que desaparece del flujo normal de la página y el resto de cajas ocupan su lugar. El 
+            resultado es que la caja 2 ahora se muestra donde estaba la caja 1 y la caja 3 se muestra donde estaba la caja 2.
+            Al mismo tiempo, la caja 1 se desplaza todo lo posible hacia la izquierda de la posición en la que se encontraba. El resultado
+            es que la caja 1 se muestra encima de la nueva posición de la caja 2 y tapa todos sus contenidos.
+        </p>
+        <div>
+            <img src="../img/PosicionamientoFlotante2.JPG" width="300px" height="150px" alt="Posicionamiento flotante">
+            <img src="../img/PosicionamientoFlotante3.JPG" width="300px" height="150px" alt="Posicionamiento flotante">
+        </div>
+        <p>
+            En el ejemplo anterior, las cajas no se superponen entre sí porque las cajas flotantes tienen en cuenta las otras cajas 
+            flotantes existentes. Como la caja 1 ya estaba posicionada lo más a la izquierda posible, la caja 2 sólo puede colocarse al 
+            lado del borde derecho de la caja 1, que es el sitio más a la izquierda posible respecto de la zona en la que se encontraba.<br>
+            Si no existe sitio en la línea actual, la caja flotante baja a la línea inferior hasta que encuentra el sitio necesario para 
+            mostrarse lo más a la izquierda o lo más a la derecha posible en esa nueva línea.<br>
+            Los elementos en línea hacen sitio a las cajas flotantes adaptando su anchura al espacio libre dejado por la caja desplazada. 
+            Los elementos de bloque no les hacen sitio, pero sí que adaptan sus contenidos para que no se solapen con las cajas flotantes.<br>
+            float.<br>
+            Valores: none | inherit | right | left.
+        </p>
+        <div>
+            <img src="../img/PosicionamientoFlotante4.JPG" width="300px" height="150px" alt="Posicionamiento flotante" class="flotante">
+            <p>
+                Uno de los principales motivos para la creación del posicionamiento float fue precisamente la posibilidad de colocar 
+                imágenes alrededor de las cuales fluye el texto. CSS permite controlar la forma en la que los contenidos fluyen alrededor de los
+                contenidos posicionados mediante float.
+            </p>
+        </div>
+
+        <h3 id="limpio">
+            PROPIEDAD CLEAR.
+        </h3>
+        <p>
+            En muchas ocasiones es admisible que algunos contenidos fluyan alrededor de una imagen, pero el resto de contenidos deben 
+            mostrarse en su totalidad sin fluir alrededor de la imagen.
+        </p>
+        <div>
+            <img src="../img/PosicionamientoFlotante4.JPG" width="300px" height="150px" alt="Posicionamiento flotante">
+        </div>
+        <p>
+            La propiedad clear permite modificar el comportamiento por defecto del posicionamiento flotante para forzar a un elemento a 
+            mostrarse debajo de cualquier caja flotante.<br>
+            Clear.<br>
+            Valores: none | left | right | both | inherit.<br>
+            La propiedad clear indica el lado del elemento HTML que no debe ser adyacente a ninguna caja posicionada de forma flotante. 
+            Si se indica el valor left, el elemento se desplaza de forma descendente hasta que pueda colocarse en una línea en la que no
+            haya ninguna caja flotante en el lado izquierdo.<br>
+            El valor both despeja los lados izquierdo y derecho del elemento, ya que desplaza el elemento de forma descendente hasta que 
+            el borde superior se encuentre por debajo del borde inferior de cualquier elemento flotante hacia la izquierda o hacia la 
+            derecha. Un segundo ejemplo de su uso sería:
+        </p>
+        <div id="ejemploClear">
+            <span class="izquierda">&laquo; Anterior</span>
+            <span class="derecha">Siguiente &raquo;</span>
+        </div>
+        <p>
+            Al añadir un div con la propiedad clear: both, se tiene la seguridad de que el div añadido se va a mostrar debajo de cualquier 
+            elemento posicionado con float y por tanto, se asegura que el div original tenga la altura necesaria como para encerrar a
+            todos sus contenidos posicionados con float.
         </p>
     </body>
 </html>
