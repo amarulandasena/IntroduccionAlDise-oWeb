@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="es" manifest="CuerpoDelDocumento4.appcache">
+    <head>
+        <base href="http://127.0.0.1:5500/src/CuerpoDelDocumento4.html" target="_blank">
+        <meta charset="UTF-8">
+        <meta name="application-name" content="Introducción al diseño web">
+        <meta name="author" content="Andres Marulanda">
+        <meta name="description" content="Aplicación para el aprendizaje del lenguaje HTML junto con CSS3">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="keywords" content="diseño, web, html5, css3, aprendizaje, enseñanza, curso, básico">
+        <meta name="http-equiv" content="UTF-8">
+
+        <link rel="stylesheet" href="../css/HojaEstilos1.css" hreflang="es" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/HojaEstilos3.css" hreflang="es" type="text/css" media="screen">
+
+        <title>
+            Cuerpo del Documento 4
+        </title>
+    </head>
+    <body>
+        <h2>
+            ETIQUETA AUDIO.
+        </h2>
+        <p>
+            Permite reproducir un archivo de audio.
+        </p>
+        <p>
+            <mark>src:</mark> El atributo permite especificar la dirección URL del recurso al cual se quiere acceder, siendo en este caso 
+            el archivo que contiene el audio a cargar en el documento web. Como esta opción no es predecible por el desarrollador y depende
+            del usuario final. Se recomienda utilizar la etiqueta source, dentro de la etiqueta de audio, para especificar diferentes 
+            formatos, de forma que el navegador utilizado cargue la primera que sea capaz de reconocer.<br>
+            <mark>autoplay:</mark> El atributo permite especificar que el archivo de audio sea reproducido automáticamente, al ser el 
+            archivo cargado por el navegador. Es un atributo booleano, por tanto para que se ejecute el audio simplemente se ha de 
+            especificar el atributo en la etiqueta.<br>
+            <mark>controls:</mark> Permite que se visualicen los controles de control de audio, entre los que se encuentran, el botón de 
+            reproducción, pausa, búsqueda y volumen.<br>
+            <mark>loop:</mark> El archivo de audio es reproducido automáticamente en modo bucle.<br>
+            <mark>muted:</mark> Al especificar el atributo, el archivo de audio será cargado, pero se activara la opción de silenciar el 
+            audio.<br>
+            <mark>preload:</mark> El atributo permite definir si se realiza una precarga inicial del archivo de audio. Si se especifica 
+            el valor none, no se realiza ningún tipo de precarga y se espera que el usuario sea el que active el audio pulsando sobre el 
+            control correspondiente. Si se indica el valor auto, se realiza la precarga completa del archivo de audio, para que la 
+            reproducción sea más homogénea y no se produzcan paros o saltos en la misma. Se ha de utilizar si no se compromete la velocidad
+            de descarga entre el cliente y servidor. Por ultimo si se especifica el valor metadata, se realiza como precarga solo
+            la información concerniente al archivo de audio, como duración, dimensión, etc.
+        </p>
+        <p>
+            Se ha de tener en cuenta que para realizar una carga correcta del formato de audio, se habría de utilizar la etiqueta source, 
+            la cual permite realizar la carga del archivo de audio en varios formatos. Estos atributos son src, el cual permite especificar
+            la ruta, bien absoluta o relativa al archivo de audio. Y otro atributo denominado type, el cual se utiliza para indicar el tipo
+            MIME del archivo que se quiere reproducir. Por ejemplo:
+        </p>
+        <audio controls muted>
+            <source src="../audio/biodynamic-impact-braam-tonal-dark-184276.mp3" type="audio/mpeg">
+            Impacto Biodinámico.
+        </audio>
+
+        <h2>
+            ETIQUETA VIDEO.
+        </h2>
+        <p>
+            Permite reproducir un archivo de video.
+        </p>
+        <p>
+            <u>src:</u> El atributo permite especificar la dirección URL del recurso al cual se quiere acceder, siendo en este caso el 
+            archivo que contiene el video a cargar en el documento web.<br>
+            <u>autoplay:</u> Permite especificar que el archivo de video sea reproducido automáticamente, al ser el archivo cargado por 
+            el navegador.<br>
+            <u>controls:</u> Permite que se visualicen los controles de control de video, entre los que se encuentran, el botón de 
+            reproducción, pausa, búsqueda y volumen, pantalla completa, subtítulos y pista.<br>
+            <u>loop:</u> El archivo de video es reproducido automáticamente en modo bucle, cuando finalice el video volverá a empezar de
+            nuevo.<br>
+            <u>muted:</u> El archivo de video será cargado, pero se activara la opción de silenciar el audio.<br>
+            <u>preload:</u> El atributo permite definir si se realiza una precarga inicial del archivo de video.<br>
+            <u>height:</u> El atributo permite especificar el alto del video que se quiere reproducir, expresando el valor en pixeles.<br>
+            <u>width:</u> El atributo permite especificar el ancho del video que se quiere reproducir, expresando el valor en pixeles.
+        </p>
+        <p>
+            Se ha de tener en cuenta que para realizar una carga correcta del formato de video, se habría de utilizar la etiqueta source, 
+            la cual permite realizar la carga del archivo de video en varios formatos, visualizando así el navegador el primer archivo
+            compatible. Estos atributos son src, el cual permite especificar la ruta, bien absoluta o relativa al archivo de video. Y otro
+            atributo denominado type, el cual se utiliza para indicar el tipo MIME del archivo que se quiere reproducir. Por ejemplo:
+        </p>
+        <video controls height="300px" width="500px">
+            <source src="../video/video1.mp4" type="video/mp4">
+            Video de las estrellas.
+        </video>
+    </body>
+</html>

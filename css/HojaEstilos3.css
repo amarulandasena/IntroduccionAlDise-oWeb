@@ -92,3 +92,9 @@ figcaption {
 .derecha {
     float:right;
 }
+
+/* Selector de etiqueta para el ejemplo de la etiqueta details */
+details, audio, video {
+    margin-left: 20px;
+}
+
