@@ -236,8 +236,8 @@
             <img src="../img/PosicionamientoFlotante4.JPG" width="300px" height="150px" alt="Posicionamiento flotante" class="flotante">
             <p>
                 Uno de los principales motivos para la creación del posicionamiento float fue precisamente la posibilidad de colocar 
-                imágenes alrededor de las cuales fluye el texto. CSS permite controlar la forma en la que los contenidos fluyen alrededor de los
-                contenidos posicionados mediante float.
+                imágenes alrededor de las cuales fluye el texto. CSS permite controlar la forma en la que los contenidos fluyen alrededor 
+                de los contenidos posicionados mediante float.
             </p>
         </div>
 
@@ -271,6 +271,98 @@
             Al añadir un div con la propiedad clear: both, se tiene la seguridad de que el div añadido se va a mostrar debajo de cualquier 
             elemento posicionado con float y por tanto, se asegura que el div original tenga la altura necesaria como para encerrar a
             todos sus contenidos posicionados con float.
+        </p>
+
+        <h2>
+            VISUALIZACIÓN.
+        </h2>
+        <p>
+            Utilizando algunas de estas propiedades es posible ocultar y/o hacer invisibles las cajas de los elementos, por lo que son 
+            imprescindibles para realizar efectos avanzados y animaciones.
+        </p>
+
+        <h3>
+            DISPLAY Y VISIBILITY.
+        </h3>
+        <p>
+            Las dos propiedades permiten ocultar cualquier elemento de la página. La propiedad display permite ocultar completamente un 
+            elemento haciendo que desaparezca de la página. Como el elemento oculto no se muestra, el resto de elementos de la página se 
+            mueven para ocupar su lugar. la propiedad visibility permite hacer invisible un elemento, lo que significa que el navegador 
+            crea la caja del elemento pero no la muestra.  
+        </p>
+        <p>
+            <a href="../img/DisplayVisibility.JPG" hreflang="es" type="image/jpg" media="screen">Diferencias visuales entre propiedades</a>
+        </p>
+        <p>
+            <u>Display:</u> Permite controlar la forma de visualizar un elemento e incluso ocultarlo.<br>
+            Valores: inline | block | none | list-item | run-in | inline-block | table | inline-table | table-row-group | table-header-group
+            | table-footer-group | table-row | table-column-group | table-column | table-cell | table-caption | inherit.<br>
+            En realidad, la propiedad display modifica la forma en la que se visualiza un elemento.<br>
+            Los valores más utilizados son inline, block y none. El valor block muestra un elemento como si fuera un elemento de bloque,
+            independientemente del tipo de elemento que se trate. El valor inline visualiza un elemento en forma de elemento en línea, 
+            independientemente del tipo de elemento que se trate. El valor none oculta un elemento y hace que desaparezca de la página. 
+            El resto de elementos de la página se visualizan como si no existiera el elemento oculto, es decir, pueden ocupar el espacio 
+            en el que se debería visualizar el elemento.
+        </p>
+        <p>
+            <u>Visibility:</u> Permite hacer visibles e invisibles a los elementos.<br>
+            Valores: visible | hidden | collapse | inherit. <br>
+            Inicialmente todas las cajas que componen la página son visibles. Empleando el valor hidden es posible convertir una caja en
+            invisible para que no muestre sus contenidos. <br>
+            El valor collapse de la propiedad visibility sólo se puede utilizar en las filas, grupos de filas, columnas y grupos de 
+            columnas de una tabla. Su efecto es similar al de la propiedad display, ya que oculta completamente la fila y/o columna y se 
+            pueden mostrar otros contenidos en ese lugar. Si se utiliza el valor collapse sobre cualquier otro tipo de elemento, su efecto 
+            es idéntico al valor hidden.
+        </p>
+        <p>
+            <strong>Relación entre float, position y display:</strong><br>
+        </p>
+        <img src="../img/RelacionFloatDisplayPosition.JPG" width="350px" height="200px" alt="Display, float y position">
+
+        <h3>
+            OVERFLOW.
+        </h3>
+        <p>
+            En algunas ocasiones el contenido de un elemento no cabe en el espacio reservado para ese elemento y se desborda. La situación
+            más habitual en la que el contenido sobresale de su espacio reservado es cuando se establece la anchura y/o altura de un 
+            elemento mediante la propiedad width y/o height. Otra situación habitual es la de las líneas muy largas contenidas dentro de
+            un elemento pre, que hacen que la página entera sea demasiado ancha.<br>
+            Valores: visible | hidden | scroll | auto | inherit. <br>
+        </p>
+        <p>
+            ▪ visible: el contenido no se corta y se muestra sobresaliendo la zona reservada para visualizar el elemento. Este es el 
+            comportamiento por defecto.
+            ▪ hidden: el contenido sobrante se oculta y sólo se visualiza la parte del contenido que cabe dentro de la zona reservada para
+            el elemento.
+            ▪ scroll: solamente se visualiza el contenido que cabe dentro de la zona reservada para el elemento, pero también se muestran 
+            barras de scroll que permiten visualizar el resto del contenido.
+            ▪ auto: el comportamiento depende del navegador, aunque normalmente es el mismo que la propiedad scroll.
+        </p>
+        <p>
+            <a href="../img/Overflow.JPG" hreflang="es" type="image/jpg" media="screen">Ejemplos de los valores típicos de Overflow</a>
+        </p>
+
+        <h3>
+            PROPIEDAD Z-INDEX.
+        </h3>
+        <p>
+            Además de posicionar una caja de forma horizontal y vertical, CSS permite controlar la posición tridimensional de las cajas 
+            posicionadas. De esta forma, es posible indicar las cajas que se muestran delante o detrás de otras cajas cuando se producen
+            solapamientos.<br>
+            La posición tridimensional de un elemento se establece sobre un tercer eje llamado Z y se controla mediante la propiedad 
+            z-index.<br>
+            Valores: auto | numero | inherit. <br>
+            El valor más común de la propiedad z-index es un número entero. Aunque la especificación oficial permite los números negativos,
+            en general se considera el número 0 como el nivel más bajo. Cuanto más alto sea el valor numérico, más cerca del usuario se 
+            muestra la caja.
+        </p>
+        <p>
+            La propiedad z-index sólo tiene efecto en los elementos posicionados, por lo que es obligatorio que la propiedad z-index vaya
+            acompañada de la propiedad position. Si debes posicionar un elemento pero no quieres moverlo de su posición original ni afectar
+            al resto de elementos de la página, puedes utilizar el posicionamiento relativo
+        </p>
+        <p>
+            <a href="../img/Zindex.JPG" type="image/jpg" hreflang="es" media="screen">Ejemplo de la propiedad Z index</a>
         </p>
     </body>
 </html>
