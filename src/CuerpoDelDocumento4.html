@@ -84,7 +84,87 @@
         </p>
         <video controls height="300px" width="500px">
             <source src="../video/video1.mp4" type="video/mp4">
+            <track src="../vtt/titulo.vtt" kind="subtitles" srclang="es" label="Cuento infantil.">            
             Video de las estrellas.
         </video>
+
+        <h2>
+            ETIQUETA TRACK.
+        </h2>
+        <p>
+            Permite especificar subtítulos “pistas de texto”, a los elementos de video y audio. Para realizar la visualización de los 
+            mismos esta etiqueta permite la inclusión de archivos especiales que contienen el texto que se ha de visualizar mientras se 
+            reproducen los archivos multimedia. SE ha de incluir en una de las etiquetas multimedia para audio o video.
+        </p>
+        <p>
+            <em>Src:</em> El atributo permite especificar la dirección URL del recurso al cual se quiere acceder, siendo en este caso el 
+            archivo que contiene el texto que se quiere utilizar como subtítulos. El formato de archivo que se suele cargar es .vtt 
+            (“video track text”).<br>
+            <em>Default:</em> Permite especificar cuál es el archivo de subtítulos por defecto que se ha de visualizar, en caso de existir 
+            varios archivos de subtítulos.<br>
+            <em>label:</em> Permite especificar entre comillas, el titulo para la pista de texto que se está cargando.<br>
+            <em>Kind:</em> Permite especificar según el valor que se indique varias opciones posibles para las pistas de texto que se 
+            desean cargar.<br>
+            Valores: captions | chapters | descriptions | metadata | subtitles.<br>
+            <em>Srclang:</em> define en su valor, utilizando los códigos de lenguaje, el lenguaje utilizado en la pista de texto. El 
+            atributo es obligatorio si se utiliza en el atributo kind, el valor subtitles.
+        </p>
+        <p>
+            El archivo de pista de texto o subtítulos que se puede utilizar, es muy fácil de crear, ya que es un archivo de texto plano, 
+            en el cual la primera línea ha de ser WEBVTT. a continuación se añade en el archivo un salto de línea y lo que se denominan
+            “cues”, que podemos definir como los intervalos de tiempo, en los cuales se ha de visualizar el texto de los subtítulos durante
+            la reproducción del archivo multimedia. Para crear un “cue” se ha de especificar un id, saltar a la línea siguiente y especificar
+            a continuación un rango de tiempo con el formato siguiente: HH:MM:SS.MMM --> HH:MM:SS.MMM <br>
+            Correspondiéndose el primer valor a inicio y el segundo a final, separados por espacios en blanco y dos guiones con un símbolo
+            de mayor.
+        </p>
+        <p>
+            Para el ejemplo de uso de la etiqueta usaremos el mismo vídeo de la etiqueta "video".
+        </p>
+
+        <h2>
+            ETIQUETA EMBED.
+        </h2>
+        <p>
+            Permite definir un contenedor para insertar una aplicación externa o un contenido interactivo.
+        </p>
+        <p>
+            <strong>Src:</strong> Permite especificar la dirección URL del recurso al cual se quiere acceder, siendo en este caso el 
+            archivo que contiene el objeto, animación, etc. <br>
+            <strong>Type:</strong> Sirve para especificar el tipo MIME del documento con el que se está realizando el enlace. Entre 
+            los tipos se puede encontrar el de objetos como flash “application/xshockwave-flash”, entre otros.<br>
+            <strong>Width:</strong> Permite especificar el ancho que ha de tener el contenedor del objeto que se quiere insertar, 
+            expresando el valor en pixeles.<br>
+            <strong>Height:</strong> Permite especificar el alto que ha de tener el contenedor del objeto que se quiere insertar, 
+            expresando el valor en pixeles.
+        </p>
+
+        <h2>
+            ETIQUETA OBJECT.
+        </h2>
+        <p>
+            Permite definir la inserción de un objeto incrustado dentro del documento web. Se utiliza para insertar elementos multimedia 
+            como audio, video, applets de java, activex, pdf y flash. También es posible utilizar la etiqueta para insertar otras páginas 
+            web, dentro del propio documento. Y si se quisieran pasar parámetros a los objetos incrustados se podría utilizar la etiqueta 
+            param, que permite realizar esta acción.
+        </p>
+        <p>
+            <mark>Width:</mark> Permite especificar el ancho que ha de tener el contenedor del objeto que se quiere insertar, expresando 
+            el valor en pixeles.<br>
+            <mark>Height:</mark> Permite especificar el alto que ha de tener el contenedor del objeto que se quiere insertar, expresando 
+            el valor en pixeles.<br>
+            <mark>Data:</mark> Permite especificar la dirección URL del recurso al cual se quiere acceder, siendo en este caso el archivo 
+            que contiene el objeto, animación, etc.<br>
+            <mark>Name:</mark> Permite especificar el nombre que se quiere aplicar al objeto insertado, para de esta forma poder 
+            referenciarlo posteriormente, si se utilizara algún lenguaje de cliente.<br>
+            <mark>Type:</mark> Sirve para especificar el tipo MIME del documento con el que se está realizando el enlace.<br>
+            Por ejemplo:
+        </p>
+        <p>
+            <object width="600px" height="500px" data="../vtt/Modelo_entidad_relacion_biblioteca.pdf" type="application/pdf" name="Modelo_entidad_relacion_biblioteca">
+                Objeto insertado con la etiqueta Object.
+            </object>
+        </p>
+        
     </body>
 </html>
