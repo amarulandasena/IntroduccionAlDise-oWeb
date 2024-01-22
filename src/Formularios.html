@@ -19,7 +19,93 @@
     </head>
     <body>
         <h1>
-            INTROSUCCIÓN A LOS FORMULARIOS.
+            INTRODUCCIÓN A LOS FORMULARIOS.
         </h1>
+
+        <h2>
+            ETIQUETA FORM.
+        </h2>
+        <p>
+            La etiqueta form, permite definir un formulario de datos. Un formulario puede contener a su vez, elementos de entrada como 
+            pueden ser campos de texto, casillas de verificación, botones de radio, botones de envió, listas de selección, areas de texto,
+            etc. 
+        </p>
+        <p>
+            <strong>Accept-charset:</strong> Permite establecer el conjunto de caracteres que ha de utilizar el formulario para el envió 
+            de información al servidor. Si no se establece el atributo se toma por defecto el valor “UNKNOWN” (“Desconocido”), el cual 
+            aplica el conjunto de caracteres que tenga aplicado el documento web. Los conjuntos de caracteres que más se suelen utilizar 
+            son UTF-8 y ISO- 8859-1, que se corresponden con la codificación Unicode y el juego de caracteres para el alfabeto Latín.<br>
+            <strong>Action:</strong> Permite especificar donde han de ser enviado los datos del formulario, cuando este es enviado.
+            Normalmente suele ser un documento web, escrito en un lenguaje de programación de servidor, el cual se encarga de procesar los
+            datos. Se ha de especificar la ruta relativa o absoluta al recurso encargado de procesar la información.<br>
+            <strong>Autocomplete:</strong> El atributo especifica que el formulario pueda utilizar las entradas de datos anteriores que 
+            pueda haber realizado el usuario, para autocompletar los campos que son solicitados por el formulario. Se puede establecer 
+            como valores posibles on, que indica la activación. Y off, indicando que el auto completado estaría desactivado. <br>
+            <strong>Enctype:</strong> Permite especificar como han de ser codificados los datos del formulario, cuando este es enviando. 
+            Solo se debe utilizar cuando el atributo method, tiene asignado un valor “POST”.<br>
+            application/x-www-form-urlencoded: Es el valor predeterminado por defecto. Todos los caracteres son codificados, los espacios
+            en blanco son convertidos en símbolos “+”, y los caracteres especiales, convertidos a sus valores hexadecimales en ASCII.<br>
+            multipart/form-data: Los datos no son codificados, se ha de utilizar cuando se envíen archivos asociados al formulario, con el 
+            control de carga de archivos. <br>
+            text/plain: Los datos son codificados, convirtiendo los espacios en blanco en símbolos “+”, mientras que los caracteres 
+            especiales no son convertidos.<br>
+            <strong>Method:</strong> Permite especificar la forma o método de envió de los datos contenidos en el formulario. El primer 
+            valor del atributo, el valor GET, envía los datos del formulario utilizando la url, por lo tanto los datos son añadidos a la 
+            dirección url mediante valores tipo nombre/valor, no se recomienda utilizar este método cuando los datos son sensibles a la 
+            seguridad, ya que los valores son mostrados en la barra de direcciones del navegador. Y también la cantidad de información que 
+            se puede enviar por este método está limitada cerca de los 3000 caracteres. El segundo valor del atributo, el valor POST, por 
+            el contrario no tiene limitación de tamaño y los datos son enviados dentro de la petición HTTP, del atributo action. Por lo 
+            tanto los datos no son visibles en su envió y la seguridad de los mismos se mantiene intacta. <br>
+            <strong>Name:</strong> Permite especificar el nombre que se quiere asignar al formulario o los datos que se solicitan en el 
+            mismo. El nombre puede ser utilizado posteriormente bien por lenguajes clientes, para interactuar con el formulario, bien
+            con lenguajes de servidor para procesar los datos recibidos.<br>
+            <strong>Novalidate: </strong> Permite especificar que los datos del formulario no sean validados, según las características 
+            de los campos utilizados en el formulario, de esta forma el formulario envía los datos sin realizar ningún tipo de comprobación
+            sobre los datos. Es un atributo booleano, por lo tanto su aparición en la etiqueta de formulario, hace que se active el mismo.<br>
+            <strong>Target (href): </strong> Permite especificar el destino por defecto para todos los enlaces y formularios del documento
+            web. Vamos a usar una etiqueta a dentro del formulario.<br> Por ejemplo:
+        </p>
+
+        <h2>
+            ETIQUETA INPUT.
+        </h2>
+        <p>
+            Es la que permite especificar los tipos de datos que se quieren solicitar para su posterior envió. La etiqueta permite mediante
+            uno de sus atributos especificar el tipo de dato a solicitar, de forma que se pueda componer un formulario que solicite los 
+            datos acordes a una estructura idónea para la recepción de los mismos por parte del servidor. También establece las reglas de 
+            validación de los datos, de forma que se reduce considerablemente por parte del programador, el análisis de los datos enviados 
+            para su posterior corrección en caso de ser incorrectos.
+        </p>
+        <p>
+            <mark>Accept:</mark> Se utiliza específicamente para los datos de entrada de tipo file, y permite especificar los tipos de 
+            archivos que acepta el servidor que recibe los datos. No realiza la validación de los archivos enviados comprobando su tipo 
+            y es en la recepción de los mismos donde se habría de procesar su tipo correcto.<br>
+            input type="file" accept= "".<br>
+            Valores: audio/* | video/* | image/* | MIME tipo.<br>
+            
+            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO.txt" autocomplete="on" method="GET" name="FORMULARIO1">
+                Cargar archivos:<input type="file" accept="image/*"><br>
+            </form>
+
+        </p>
+        <p>
+            <mark>Alt:</mark> Permite especificar un texto alternativo para la imagen. Este texto alternativo es visualizado cuando se 
+            produce un error en el atributo src, la conexión fuese muy lenta o si el usuario utiliza un lector de pantalla. Se puede 
+            especificar siempre y cuando el tipo de dato que se solicita, sea de tipo image, según se haya especificado en el 
+            atributo type.<br>
+            input type="image" alt="texto alternativo."<br>
+
+            <mark>Autocomplete:</mark> Especifica que el dato solicitado pueda utilizar las entradas de datos anteriores que pueda haber 
+            realizado el usuario, para autocompletar el campo que se está solicitando. Se puede establecer como valores posibles on, que 
+            indica la activación. Y off, indicando que el auto completado estaría desactivado.<br>  
+
+            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO.txt" autocomplete="on" method="GET" name="FORMULARIO1">
+                <input type="image" src="../img/email.png" alt="Enviar datos al formulario" height="50px">
+            </form>
+        </p>
+
+        <p>
+            
+        </p>
     </body>
 </html>
