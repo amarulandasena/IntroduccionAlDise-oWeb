@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="es" manifest="FormatoTexto.appcache">
+    <head>
+        <base href="http://127.0.0.1:5500/src/FormatoTexto.html" target="_blank">
+        <meta charset="UTF-8">
+        <meta name="application-name" content="Introducción al diseño web">
+        <meta name="author" content="Andres Marulanda">
+        <meta name="description" content="Aplicación para el aprendizaje del lenguaje HTML junto con CSS3">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="keywords" content="diseño, web, html5, css3, aprendizaje, enseñanza, curso, básico">
+        <meta name="http-equiv" content="UTF-8">
+        
+        <link rel="stylesheet" href="../css/HojaEstilos1.css" hreflang="es" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/HojaEstilos3.css" hreflang="es" type="text/css" media="screen">
+
+        <title>
+            Formato del texto
+        </title>
+    </head>
+    <body>
+        <h1>
+            FORMATO DEL TEXTO.
+        </h1>
+
+        <h2>
+            COLOR.
+        </h2>
+        <p>
+            Establecer el color de letra utilizado para el texto. <br>
+            Valores: color | inherit.<br>
+            Aunque el color por defecto del texto depende del navegador, todos los navegadores principales utilizan el color negro. Para
+            establecer el color de letra de un texto, se puede utilizar cualquiera de las cuatro formas que incluye CSS para definir un 
+            color (#decimal | #hexadécimal | palabra clave | rgb(porcentual, decimal, hexadécimal)).<br>
+            La única excepción de este comportamiento son los enlaces que se crean con la etiqueta a. Aunque el color de la letra se 
+            hereda de los elementos padre a los elementos hijo, con los enlaces no sucede lo mismo, por lo que es necesario indicar su 
+            color de forma explícita.
+        </p>
+
+        <h2>
+            FONT-FAMILY.
+        </h2>
+        <p>
+            Establecer el tipo de letra utilizado para el texto. <br>
+            Valores: nombre_familia | familia_generica | inherit. <br>
+            El tipo de letra del texto se puede indicar de dos formas diferentes:<br>
+            ▪ Mediante el nombre de una familia tipográfica: en otras palabras, mediante el nombre del tipo de letra, como por ejemplo 
+            "Arial", "Verdana", "Garamond", etc.<br>
+            ▪ Mediante el nombre genérico de una familia tipográfica: los nombres genéricos no se refieren a ninguna fuente en concreto, 
+            sino que hacen referencia al estilo del tipo de letra. Las familias genéricas definidas son serif (tipo de letra similar a
+            Times New Roman), sans-serif (tipo Arial), cursive (tipo Comic Sans), fantasy
+            (tipo Impact) y monospace (tipo Courier New).<br>
+            Para evitar el problema común de que el usuario no tenga instalada la fuente que quiere utilizar el diseñador, CSS permite 
+            indicar en la propiedad font-family más de un tipo de letra. El navegador probará en primer lugar con el primer tipo de letra 
+            indicado. Si el usuario la tiene instalada, el texto se muestra con ese tipo de letra. Si el usuario no dispone del primer 
+            tipo de letra indicado, el navegador irá probando con el resto de tipos de letra hasta que encuentre alguna fuente que esté 
+            instalada en el ordenador del usuario. Evidentemente, el diseñador no puede indicar para cada propiedad font-family tantos 
+            tipos de letra como posibles fuentes parecidas existan. el valor de font-family suele definirse como una lista de tipos de 
+            letra alternativos separados por comas. El último valor de la lista es el nombre de la familia tipográfica genérica que más 
+            se parece al tipo de letra que se quiere utilizar.
+        </p>
+
+        <h2>
+            FONT-SIZE.
+        </h2>
+        <p>
+            Establecer el tamaño de letra utilizado para el texto. <br>
+            Valores: tamaño_absoluto | tamaño_relativo | medida | porcentaje | inherit.<br>
+            CSS permite utilizar una serie de palabras clave para indicar el tamaño de letra del texto:<br>
+            ▪ tamaño_absoluto: indica el tamaño de letra de forma absoluta mediante alguna de las siguientes palabras clave: xx-small, 
+            x-small, small, medium, large, x-large, xx-large.<br>
+            ▪ tamaño_relativo: indica de forma relativa el tamaño de letra del texto mediante dos palabras clave (larger, smaller) que 
+            toman como referencia el tamaño de letra del elemento padre.<br>
+            CSS recomienda indicar el tamaño del texto en la unidad em o en porcentaje (%). Además, es habitual indicar el tamaño del texto
+            en puntos (pt) cuando el documento está específicamente diseñado para imprimirlo.<br>
+            Por defecto los navegadores asignan los siguientes tamaños a los títulos de sección: h1 = xx-large, h2 = x-large, h3 = large,
+            h4 = medium, h5 = small, h6 = xx-small.
+        </p>
+
+        <h2>
+            FONT-WEIGHT.
+        </h2>
+        <p>
+            Establecer la anchura de la letra utilizada para el texto. <br>
+            Valores: normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | inherit. <br>
+            Los valores que normalmente se utilizan son normal (el valor por defecto) y bold para los textos en negrita. El valor normal 
+            equivale al valor numérico 400 y el valor bold al valor numérico 700.
+        </p>
+
+        <h2>
+            FONT-STYLE.
+        </h2>
+        <p>
+            Establecer el estilo de la letra utilizada para el texto.<br>
+            Valores: normal | italic | oblique | inherit.<br>
+            Normalmente la propiedad font-style se emplea para mostrar un texto en cursiva mediante el valor italic.<br>
+            El texto del elemento em se muestra como un texto en negrita y el texto del elemento strong se muestra como un texto en 
+            cursiva con un color de fondo muy destacado.
+        </p>
+
+        <h2>
+            FONT-VARIANT.
+        </h2>
+        <p>
+            Establecer el estilo alternativo de la letra utilizada para el texto. La propiedad font-variant no se suele emplear 
+            habitualmente, ya que sólo permite mostrar el texto con letra versal (mayúsculas pequeñas).
+        </p>
+
+        <h2>
+            FONT.
+        </h2>
+        <p>
+            CSS proporciona una propiedad tipo "shorthand" denominada font y que permite indicar de forma directa algunas o todas las 
+            propiedades de la tipografía de un texto.<br>
+            Valores : ( font-style || font-variant || font-weight ) | font-size ( / line-height ) font-family | caption | icon | menu
+            | message-box | small-caption | status-bar | inherit.<br>
+            El orden en el que se deben indicar las propiedades del texto es el siguiente:<br>
+            ▪ En primer lugar y de forma opcional se indican el font-style, font-variant y font-weight en cualquier orden.<br>
+            ▪ A continuación, se indica obligatoriamente el valor de font-size seguido opcionalmente por el valor de line-height.<br>
+            ▪ Por último, se indica obligatoriamente el tipo de letra a utilizar.<br>
+            Aunque su uso no es muy común, la propiedad font también permite indicar el tipo de letra a utilizar mediante una serie de 
+            palabras clave: caption, icon, menu, message-box,small-caption, status-bar.<br>
+            Si por ejemplo se utiliza la palabra status-bar, el navegador muestra el texto con el mismo tipo de letra que la que utiliza 
+            el sistema operativo para mostrar los textos de la barra de estado de las ventanas. La palabra icon se puede utilizar para 
+            mostrar el texto con el mismo tipo de letra que utiliza el sistema operativo para mostrar el nombre de los iconos y así 
+            sucesivamente.
+        </p>
+
+        <h2>
+            TEXT-ALIGN.
+        </h2>
+        <p>
+            Establece la alineación del contenido del elemento. <br>
+            Valores: left | right | center | justify | inherit.<br>
+            Los valores definidos por CSS permiten alinear el texto según los valores tradicionales: a la izquierda (left), a la derecha 
+            (right), centrado (center) y justificado (justify).La propiedad text-align no sólo alinea el texto que contiene un elemento, 
+            sino que también alinea todos sus contenidos, como por ejemplo las imágenes.
+        </p>
+
+        <h2>
+            LINE-HEIGHT.
+        </h2>
+        <p>
+            Permite controlar la altura ocupada por cada línea de texto. <br>
+            Valores: normal | numero | medida | porcentaje | inherit. <br>
+            Además de todas las unidades de medida y el uso de porcentajes, la propiedad line-height permite indicar un número sin unidades
+            que se interpreta como el múltiplo del tamaño de letra del elemento.
+        </p>
+
+        <h2>
+            TEXT-DECORATION.
+        </h2>
+        <p>
+            Establece la decoración del texto (subrayado, tachado, parpadeante, etc.)<br>
+            Valores: none | ( underline || overline || line-through || blink ) | inherit. <br>
+            El valor underline subraya el texto, por lo que puede confundir a los usuarios haciéndoles creer que se trata de un enlace. 
+            El valor overline añade una línea en la parte superior del texto, un aspecto que raramente es deseable. El valor line-through
+            muestra el texto tachado con una línea continua, por lo que su uso tampoco es muy habitual. Por último, el valor blink muestra 
+            el texto parpadeante y se recomienda evitar su uso por las molestias que genera a la mayoría de usuarios.
+        </p>
+    </body>
+</html>
