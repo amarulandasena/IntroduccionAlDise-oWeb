@@ -83,8 +83,8 @@
             input type="file" accept= "".<br>
             Valores: audio/* | video/* | image/* | MIME tipo.<br>
             
-            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO.txt" autocomplete="on" method="GET" name="FORMULARIO1">
-                Cargar archivos:<input type="file" accept="image/*"><br>
+            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO.txt" autocomplete="on" method="POST" name="FORMULARIO1">
+                Cargar archivos: <input type="file" accept="image/*"><br>
             </form>
 
         </p>
@@ -99,13 +99,103 @@
             realizado el usuario, para autocompletar el campo que se está solicitando. Se puede establecer como valores posibles on, que 
             indica la activación. Y off, indicando que el auto completado estaría desactivado.<br>  
 
-            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO.txt" autocomplete="on" method="GET" name="FORMULARIO1">
+            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO.txt" autocomplete="on" method="POST" enctype="text/plain" name="FORMULARIO1">
                 <input type="image" src="../img/email.png" alt="Enviar datos al formulario" height="50px">
             </form>
         </p>
 
         <p>
-            
+           <mark>Autofocus:</mark> Permite especificar cuál es el control que recibe el “foco”, cuando se realiza la carga del documento 
+           web en el navegador. Es un atributo booleano y solo con aparecer significa que está activado. Se ha de tener en cuenta que este 
+           atributo solo se puede especificar en un solo dato dentro del formulario. Por ejemplo:<br>
+
+           <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO.txt" autocomplete="on" method="POST" enctype="text/plain" name="FORMULARIO1">
+                Nombres: <input type="text" name="nombre" autofocus><br>
+                Apellidos: <input type="text" name="apellidos"><br>
+                <input type="submit" value="enviar">
+           </form>
+        </p>
+
+        <p>
+            <mark>Checked:</mark> Se puede utilizar en el caso de que en el atributo type, se haya especificado un tipo de dato checkbox, 
+            o radio. Y permite especificar que el campo sobre el cual se aplica aparezca inicialmente marcado, cuando se realiza la carga 
+            del documento web. Por ejemplo:
+
+            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO.txt" autocomplete="on" method="POST" enctype="text/plain" name="FORMULARIO1">
+                <input type="checkbox" name="equipo" value="Nacional" checked> Nacional<br>
+                <input type="checkbox" name="equipo" value="Medellín"> Medellín<br>
+
+                <input type="radio" name="equipo1" value="Envigado" checked> Envigado<br>
+                <input type="radio" name="equipo1" value="Rionegro"> Rionegro
+            </form>
+        </p>
+
+        <p>
+            <mark>Disabled:</mark> Especifica que el elemento sobre el que se aplica, se ha de desactivar. Un elemento desactivado está 
+            bloqueado y no se puede cambiar ni realizar clic sobre el mismo. Por ejemplo:
+
+            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO.txt" method="POST" enctype="text/plain" autocomplete="on" name="FORMULARIO1">
+                Identificación: <input type="text" name="identificacion" disabled><br>
+                Nombre: <input type="text" name="nombre"><br>
+                Apellidos: <input type="text" name="apellidos"><br>
+                <input type="submit" value="enviar">
+            </form>
+        </p>
+
+        <p>
+            <mark>Form:</mark> Permite especificar a qué formulario pertenece el campo que se está solicitando especificando el atributo 
+            identificador del formulario. De esta forma se puede situar un campo incluso fuera del formulario, pero indicando que pertenece
+            a un formulario concreto, de manera que cuando los datos son enviados, se envía también el dato situado fuera del formulario.<br>
+            form="identificador del formulario".
+        </p>
+
+        <p>
+            <mark>Formaction:</mark> El atributo permite especificar una URL distinta de envió, sobrescribiendo la que aparece en el 
+            atributo action, del formulario. De esta forma es posible situar diferentes botones de envió de formulario, enviando los 
+            datos a diferentes sitios según se pulse un botón u otro. El atributo se ha de utilizar cuando el atributo type, del campo 
+            tenga un valor submit, o image.
+
+            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO.txt" method="POST" enctype="text/plain" autocomplete="on" name="FORMULARIO1">
+                Nombre: <input type="text" name="nombre"><br>
+                Apellidos: <input type="text" name="apellidos"><br>
+                <input type="submit" value="enviar"><br>
+                <input type="submit" formaction="../vtt/DATOS_FORMULARIO_1.txt" value="enviar formulario 1">
+            </form>
+        </p>
+
+        <p>
+            <mark>Formenctype:</mark> Permite especificar como han de ser codificados los datos del formulario, cuando este es enviando. 
+            Se aplica solo a botones de formulario de tipo submit o image. Solo se debe utilizar cuando el atributo method, tiene asignado
+            un valor “POST”. El atributo sobrescribe el método de envió del formulario, permitiendo enviar según el botón de envió que se 
+            pulse con un método de codificación diferente a distintos sitios.<br>
+
+            <mark>Formmethod:</mark> Permite especificar la forma o método de envió de los datos contenidos en el formulario. Los valores 
+            para el atributo son GET, o POST. Sobrescribe el método de envió asignado al formulario, según el botón sobre el cual se pulse,
+            se acepta el atributo en botones de envió del tipo submit o image.
+
+            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO.txt" method="POST" enctype="text/plain" autocomplete="on" name="FORMULARIO1">
+                Nombre: <input type="text" name="nombre"><br>
+                Apellidos: <input type="text" name="apellidos"><br>
+                <input type="submit" value="enviar"><br>
+                <input type="submit" formaction="../vtt/DATOS_FORMULARIO_1.txt" value="enviar formulario 1" formmethod="GET" formenctype="text/plain">
+            </form>
+        </p>
+
+        <p>
+            <mark>Formnovalidate:</mark> Permite especificar que los datos del formulario no sean validados, según las características de 
+            los campos utilizados en el formulario, de esta forma el formulario envía los datos sin realizar ningún tipo de comprobación 
+            sobre los datos. El atributo se ha de utilizar sobre campos de tipo submit o image, y se superpone sobre el atributo aplicado 
+            al formulario, permitiendo así la posibilidad de incluir botones de envió de datos, los cuales no hagan validación de datos 
+            en el envió. Es un atributo booleano. Por ejemplo:
+
+            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO.txt" autocomplete="on" method="POST" enctype="text/plain" name="FORMULARIO1">
+                Identificación: <input type="text" name="identificacion" disabled><br>
+                Nombre: <input type="text" name="nombre"><br>
+                Apellidos: <input type="text" name="apellidos"><br>
+                Usuario: <input type="text" name="usuario"><br>
+                Contraseña: <input type="password" name="contraseña" autocomplete="off"><br>
+                <input type="submit" formaction="../vtt/DATOS_FORMULARIO_1.txt" formmethod="GET" formnovalidate>
+            </form>
         </p>
     </body>
 </html>

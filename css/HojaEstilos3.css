@@ -101,6 +101,12 @@ details, audio, video {
 /* Selector de etiqueta para la margen del formulario */
 form {
     margin-left: 20px;
+    border: double rgb(15, 15, 65) 2px;
+    padding: 5px 3px;
+}
+
+input {
+    margin: 3px;
 }
 
 
