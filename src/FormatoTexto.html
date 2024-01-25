@@ -158,5 +158,85 @@
             muestra el texto tachado con una línea continua, por lo que su uso tampoco es muy habitual. Por último, el valor blink muestra 
             el texto parpadeante y se recomienda evitar su uso por las molestias que genera a la mayoría de usuarios.
         </p>
+
+        <h2>
+            TEXT-TRANSFORM.
+        </h2>
+        <p>
+            Transforma el texto original (lo transforma a mayúsculas, a minúsculas, etc.). <br>
+            Valores: capitalize | uppercase | lowercase | none | inherit. <br>
+            Permite mostrar el texto original transformado en un texto completamente en mayúsculas (uppercase), en minúsculas (lowercase) 
+            o con la primera letra de cada palabra en mayúscula (capitalize).
+        </p>
+
+        <h2>
+            VERTICAL ALIGN.
+        </h2>
+        <p>
+            Uno de los principales problemas del diseño de documentos y páginas mediante CSS consiste en la alineación vertical en una 
+            misma línea de varios elementos diferentes como imágenes y texto. <br>
+            Valores: baseline | sub | super | top | text-top | middle | bottom | text-bottom | porcentaje | medida | inherit.<br>
+            El valor por defecto es baseline y el valor más utilizado cuando se establece la propiedad vertical-align es middle.
+        </p>
+        <img src="../img/VerticalAlign.JPG" heigt="400px" width="500px" alt="Alineación vertical">
+
+        <h2>
+            TEXT-INDENT.
+        </h2>
+        <p>
+            Tabula desde la izquierda la primera línea del texto original. <br>
+            Valores: medida | porcentaje | inherit. <br>
+            Por ejemplo:
+        </p>
+        <img src="../img/TextIndent.JPG" height="400px" width="500px" alt="Tabulación a la izquierda">
+
+        <h2>
+            LETTER Y WORD SPACING.
+        </h2>
+        <p>
+            CSS también permite controlar la separación entre las letras que forman las palabras y la separación entre las palabras que 
+            forman los textos. La propiedad que controla la separación entre letras se llama letter-spacing y la separación entre palabras 
+            se controla mediante word-spacing.<br>
+            Valores: normal | medida | inherit.<br>
+            Por ejemplo:
+        </p>
+        <img src="../img/LetterWordSpacing.JPG" height="400px" width="500px" alt="Espaciado de letras y palabras">
+        <p>
+            Cuando se utiliza un valor numérico en las propiedades letter-spacing y word-spacing, se interpreta como la separación 
+            adicional que se añade (si el valor es positivo) o se quita (si el valor es negativo) a la separación por defecto entre letras
+            y palabras respectivamente.<br>
+            HTML elimina todos los espacios en blanco sobrantes, es decir, todos salvo un espacio en blanco entre cada palabra. Para forzar
+            los espacios en blanco adicionales se debe utilizar la entidad HTML &nbsp.;<br>
+        </p>
+
+        <h2>
+            WHITE SPACE. 
+        </h2>
+        <p>
+            Establece el tratamiento de los espacios en blanco del texto. <br>
+            Valores: normal | pre | nowrap | pre-wrap | pre-line | inherit. <br>
+            El significado de cada uno de los valores es el siguiente:<br>
+            ▪ normal: comportamiento por defecto de HTML.<br>
+            ▪ pre: se respetan los espacios en blanco y las nuevas líneas (exactamente igual que la etiqueta pre). Si la línea es muy 
+            larga, se sale del espacio asignado para ese contenido.<br>
+            ▪ nowrap: elimina los espacios en blanco y las nuevas líneas. Si la línea es muy larga, se sale del espacio asignado para ese 
+            contenido.<br>
+            ▪ pre-wrap: se respetan los espacios en blanco y las nuevas líneas, pero ajustando cada línea al espacio asignado para ese 
+            contenido.<br>
+            ▪ pre-line: elimina los espacios en blanco y respeta las nuevas líneas, pero ajustando cada línea al espacio asignado para 
+            ese contenido.<br>
+        </p>
+        <img src="../img/WhiteSpace.JPG" height="200px" width="600px" alt="valores para white space">
+
+        <h2>
+            PSEUDO ELEMENTOS.
+        </h2>
+        <p>
+            CSS define unos elementos especiales llamados "pseudo-elementos" que permiten aplicar estilos a ciertas partes de un texto. En
+            concreto, CSS permite definir estilos especiales a la primera frase de un texto y a la primera letra de un texto. El 
+            pseudo-elemento :first-line permite aplicar estilos a la primera línea de un texto. Las palabras que forman la primera línea 
+            de un texto dependen del espacio reservado para mostrar el texto o del tamaño de la ventana del navegador.<br>
+            De la misma forma, CSS permite aplicar estilos a la primera letra del texto mediante el pseudo-elemento :first-letter.<br>
+        </p>
     </body>
 </html>
