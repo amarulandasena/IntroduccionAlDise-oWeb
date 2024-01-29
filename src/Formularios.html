@@ -100,7 +100,7 @@
             indica la activación. Y off, indicando que el auto completado estaría desactivado.<br>  
 
             <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO.txt" autocomplete="on" method="POST" enctype="text/plain" name="FORMULARIO1">
-                <input type="image" src="../img/email.png" alt="Enviar datos al formulario" height="50px">
+                <input type="image" src="../img/email.png" alt="Enviar datos al formulario" height="40px" width="50px">
             </form>
         </p>
 
@@ -189,13 +189,88 @@
             en el envió. Es un atributo booleano. Por ejemplo:
 
             <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO.txt" autocomplete="on" method="POST" enctype="text/plain" name="FORMULARIO1">
-                Identificación: <input type="text" name="identificacion" disabled><br>
-                Nombre: <input type="text" name="nombre"><br>
-                Apellidos: <input type="text" name="apellidos"><br>
-                Usuario: <input type="text" name="usuario"><br>
-                Contraseña: <input type="password" name="contraseña" autocomplete="off"><br>
+                <input type="text" name="identificacion" disabled placeholder="identificación" value="1017258963"><br>
+                <input type="text" name="nombre" required placeholder="Ingrese su nombre"><br>
+                <input type="text" name="apellidos" required placeholder="Ingrese sus apellidos"><br>
+                <input type="text" name="usuario" required placeholder="Ingrese su usuario"><br>
+                <input type="password" name="contraseña" autocomplete="off" required placeholder="Ingrese su contraseña"><br>
                 <input type="submit" formaction="../vtt/DATOS_FORMULARIO_1.txt" formmethod="GET" formnovalidate>
+                <input type="submit" formaction="../vtt/DATOS_FORMULARIO_1.txt" formmethod="GET" value="Enviar a misma ventana" formtarget="_self">
             </form>
+        </p>
+
+        <p>
+            <mark>Formtarget:</mark> Permite especificar el destino por defecto para todos los enlaces y formularios del documento web. 
+            El atributo se ha de aplicar a campos de tipo envió datos como submit o image, y sobrescribe el destino aplicado al formulario
+            con el atributo target.<br>
+            Valores: _blank | _self | _parent | _top | _framename.
+        </p>
+
+        <p>
+            <mark>Height:</mark> Permite especificar el alto de la imagen en pixeles. El atributo se aplica solo a campos de tipo image, 
+            y se suelen utilizar para los botones de envió del formulario cuando en lugar de botones normales se quiere visualizar iconos 
+            o imágenes representativos del envió de datos.<br>
+        </p>
+        <p>
+            <mark>Width:</mark> Permite especificar el ancho de la imagen en pixeles. El atributo se aplica solo a campos de tipo image, 
+            y se suelen utilizar para los botones de envió del formulario cuando en lugar de botones normales se quiere visualizar iconos 
+            o imágenes representativos del envió de datos.<br>
+        </p>
+
+        <p>
+            <mark>Name:</mark> permite especificar el nombre que se quiere asignar al campo del formulario. El nombre puede ser utilizado 
+            posteriormente bien por lenguajes clientes, para interactuar con el formulario, bien con lenguajes de servidor para procesar 
+            los datos recibidos. Por ejemplo:
+
+            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO_1.txt" autocomplete="on" method="GET" enctype="text/plain" name="FORMULARIO1">
+                Nombre: <input type="text" name="nombre" size="60" maxlength="70" placeholder="Máximo 70 caracteres.">
+                Fecha de nacimiento: <input type="date" name="fecha de nacimiento">
+                <input type="submit" value="Enviar fecha de nacimiento" name="enviar fecha">
+            </form>
+        </p>
+
+        <p>
+            <mark>Readonly:</mark> Permite especificar que un campo sea de solo lectura, es decir su contenido será visible y podrá ser 
+            seleccionado, pero no se podrá modificar. Se suele utilizar en conjunto con lenguajes de programación de cliente, para alterar 
+            el valor de solo lectura, cuando se cumplan ciertas condiciones en los datos. Es un atributo booleano por tanto su sola 
+            aparición en la etiqueta hace que sea activado el atributo.
+        </p>
+
+        <p>
+            <mark>Required:</mark> Aplicado a un campo permite especificar que la introducción de datos en el campo ha de ser obligatorio, 
+            es decir no se puede dejar en blanco. El atributo es booleano, por lo que simplemente su aparición en el campo lo activa. En 
+            caso de estar activado el atributo en campo y la validación también activa, si campo está vacío en el momento de su envió, 
+            se paraliza el envió y advierte de que el campo ha de rellenarse. El atributo se puede aplicar a campos de tipo texto, 
+            búsqueda, url, fechas, email, contraseñas, casillas de verificación, radios, números y ficheros.
+        </p>
+
+        <p>
+            <mark>Placeholder:</mark> Permite especificar un texto de ayuda informativo sobre el contenido que ha de tener el campo. El 
+            texto se muestra cuando el campo está vacío y desaparece cuando se escribe algo en el mismo. El atributo se puede aplicar a 
+            campos de tipo texto, búsqueda, teléfono y correo electrónico.
+        </p>
+
+        <p>
+            <mark>Value:</mark> Permite especificar el valor de un campo del tipo input. Si el atributo se aplica a elementos de tipo 
+            button, reset o submit, especifica el texto del botón. Si se aplica a elementos de tipo text, hidden, o password, especifica 
+            el valor del campo por defecto. Para campos de tipo radio, checkbox e image, especifica el valor asociado al campo
+            y es obligatorio en los dos primeros. El atributo no se puede utilizar en campos de tipo file.
+        </p>
+
+        <p>
+            <mark>Size:</mark> Permite especificar el ancho visible del campo en caracteres, de una etiqueta de tipo input, siempre que 
+            sea de tipo text, search, url, email o password. Aunque especifique el ancho visible de la caja del campo, este atributo no
+            establece el número de caracteres máximos que puede tener el mismo.
+        </p>
+
+        <p>
+            <mark>Maxlength:</mark> Permite especificar el número de caracteres máximos que se permite teclear en una etiqueta de tipo 
+            input.
+        </p>
+
+        <p>
+            <mark>Src:</mark> Permite especificar el origen de la imagen, para un campo de tipo image, es decir su ubicación, bien 
+            mediante una ruta absoluta o relativa.
         </p>
     </body>
 </html>
