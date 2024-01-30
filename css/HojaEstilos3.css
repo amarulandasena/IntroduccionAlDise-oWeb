@@ -109,5 +109,39 @@ input {
     margin: 3px;
 }
 
+/* Selectores de clase para lograr el efecto de sombra en las imagenes 
+
+.dropshadow {
+float:left;
+clear:left;
+background: url(imagenes/shadowAlpha.png) no-repeat bottom right !important;
+background: url(imagenes/shadow.gif) no-repeat bottom right;
+margin: 10px 0 10px 10px !important;
+margin: 10px 0 10px 5px;
+padding: 0px;
+}
+
+.innerbox {
+position:relative;
+bottom:6px;
+right: 6px;
+border: 1px solid #999999;
+padding:4px;
+margin: 0px 0px 0px 0px;
+}
+
+<div class="dropshadow">
+<div class="innerbox">
+<img src="imagenes/imagen.png" alt="Imagen genérica" />
+</div>
+</div>
+
+<div class="dropshadow">
+<div class="innerbox">
+<h4>Párrafo de texto</h4>
+<p>Esta técnica no sólo permite añadir sombra a las imágenes, sino a
+cualquier elemento.</p>
+</div>
+</div> */
 
 

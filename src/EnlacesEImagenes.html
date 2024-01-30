@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es" manifest="EnlacesEImagenes.appcache">
+    <head>
+        <base href="http://127.0.0.1:5500/src/EnlacesEImagenes.html" target="_blank">
+        <meta charset="UTF-8">
+        <meta name="application-name" content="Introducción al diseño web">
+        <meta name="description" content="Aplicación para el aprendizaje del lenguaje HTML junto con CSS3">
+        <meta name="author" content="Andres Marulanda">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="keywords" content="diseño, web, html5, css3, aprenidzaje, enseñanza, curso, básico">
+        <meta name="http-equiv" content="UTF-8">
+
+        <link rel="stylesheet" href="../css/HojaEstilos1.css" hreflang="es" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/HojaEstilos2.css" hreflang="es" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/HojaEstilos3.css" hreflang="es" type="text/css" media="screen">
+
+        <title>
+            Enlaces e Imagenes
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            ENLACES
+        </h1>
+
+        <h2>
+            TAMAÑO, COLOR Y DECORACIÓN.
+        </h2>
+        <p>
+            Los estilos más sencillos que se pueden aplicar a los enlaces son los que modifican su tamaño de letra, su color y la 
+            decoración del texto del enlace. Utilizando las propiedades text-decoration y font-weight se pueden conseguir algunos estilos.
+        </p>
+
+        <h2>
+            PSEUDO - CLASES.
+        </h2>
+        <p>
+            CSS también permite aplicar diferentes estilos a un mismo enlace en función de su estado. De esta forma, es posible cambiar el
+            aspecto de un enlace cuando por ejemplo el usuario pasa el ratón por encima o cuando el usuario pincha sobre ese enlace. <br>
+            CSS define las siguientes cuatro pseudo-clases:<br>
+            ▪ :link, aplica estilos a los enlaces que apuntan a páginas o recursos que aún no han sido visitados por el usuario.<br>
+            ▪ :visited, aplica estilos a los enlaces que apuntan a recursos que han sido visitados anteriormente por el usuario. El 
+            historial de enlaces visitados se borra automáticamente cada cierto tiempo y el usuario también puede borrarlo manualmente.<br>
+            ▪ :hover, aplica estilos al enlace sobre el que el usuario ha posicionado el puntero del ratón. <br>
+            ▪ :active, aplica estilos al enlace que está pinchando el usuario. Los estilos sólo se aplican desde que el usuario pincha el 
+            botón del ratón hasta que lo suelta, por lo que suelen ser unas pocas décimas de segundo. <br>
+            Por defecto los navegadores muestran los enlaces no visitados de color azul y subrayados y los enlaces visitados de color 
+            morado. Las pseudo-clases anteriores permiten modificar completamente ese aspecto por defecto y por eso casi todas las páginas 
+            las utilizan. <br>
+            Las pseudo-clases siempre incluyen dos puntos (:) por delante de su nombre y siempre se añaden a continuación del elemento 
+            al que se aplican, sin dejar ningún espacio en blanco por delante.<br>
+            Cuando se aplican varias pseudo-clases diferentes sobre un mismo enlace, se producen colisiones entre los estilos de algunas 
+            pseudo-clases. <br>
+            Si se definen varias pseudo-clases sobre un mismo enlace, el único orden que asegura que todos los estilos de las pseudo-clases
+            se aplican de forma coherente es el siguiente: :link, :visited, :hover y :active.<br>
+            Las pseudo-clases :link y :visited solamente están definidas para los enlaces, pero las pseudo-clases :hover y :active se 
+            definen para todos los elementos HTML.
+        </p>
+
+        <h2>
+            DECORACIÓN PERSONALIZADA.
+        </h2>
+        <p>
+            La propiedad text-decoration permite añadir o eliminar el subrayado de los enlaces. Sin embargo, el aspecto del subrayado lo 
+            controla automáticamente el navegador, por lo que su color siempre es el mismo que el del texto del enlace y su anchura es
+            proporcional al tamaño de letra. No obstante, utilizando la propiedad border-bottom es posible añadir cualquier tipo de
+            subrayado para los enlaces de las páginas. Por ejemplo:
+        </p>
+
+        <h2>
+            IMAGENES SEGÚN EL TIPO DE ENLACE.
+        </h2>
+        <p>
+            Puede resultar útil incluir un pequeño icono al lado de un enlace para indicar el tipo de contenido que enlaza, como por 
+            ejemplo un archivo comprimido o un documento con formato PDF. Este tipo de imágenes son puramente decorativas en vez de 
+            imágenes de contenido, por lo que se deberían añadir con CSS y no con elementos de tipo img. Utilizando la propiedad 
+            background (y background-image) se puede personalizar el aspecto de los enlaces para que incluyan un pequeño icono a su lado.
+            La técnica consiste en mostrar una imagen de fondo sin repetición en el enlace y añadir el padding necesario al texto del 
+            enlace para que no se solape con la imagen de fondo.
+        </p>
+        <p>
+            <a class="imagenesEnlaces" href="https://espanol.yahoo.com/" hreflang="es" target="_blank">Enlace a Yahoo</a>
+        </p>
+
+        <h2>
+            MOSTRAR ENLACES COMO BOTONES.
+        </h2>
+        <p>
+            Las propiedades definidas por CSS permiten mostrar los enlaces con el aspecto de un botón, lo que puede ser útil en formularios
+            en los que no se utilizan elementos específicos para crear botones.
+        </p>
+        <a class="botonesEnlaces" href="https://www.dropbox.com/" hreflang="en" target="_blank">Enlace a Dropbox</a>
+
+        <h1>
+            IMAGENES
+        </h1>
+
+        <h2>
+            ESTABLECER EL ANCHO Y EL ALTO.
+        </h2>
+        <p>
+            Utilizando las propiedades width y height, es posible mostrar las imágenes con cualquier altura/anchura, independientemente 
+            de su altura/anchura real.<br>
+            Establecer la altura/anchura de todas las imágenes mediante CSS es una práctica poco recomendable. El motivo es que normalmente
+            dos imágenes diferentes no comparten la misma altura/anchura. Por lo tanto, se debe crear una nueva regla CSS (y un nuevo 
+            selector) para cada una de las diferentes imágenes del sitio web. Por ende, se recomienda establecer la altura/
+            anchura de las imágenes mediante los atributos width y height de la etiqueta img.
+        </p>
+
+        <h2>
+            ELIMINAR LOS BORDES DE LAS IMAGENES.
+        </h2>
+        <p>
+            Cuando una imagen forma parte de un enlace, los navegadores muestran por defecto un borde azul grueso alrededor de las 
+            imágenes. Por tanto, una de las reglas más utilizadas en los archivos CSS es la que elimina los bordes de las imágenes con 
+            enlaces:<br>
+            boder : none.
+        </p>
+
+        <h2>
+            SOMBRAS.
+        </h2>
+        <p>
+            CSS no incluye propiedades que permitan mostrar de forma sencilla sombras en los elementos. No obstante, existen varias 
+            técnicas sencillas y otras más avanzadas que permiten crear sombras que se adapten a cualquier imagen o elemento. La técnica 
+            consiste en la utilización de un par de elementos div alrededor del elemento que va a mostrar una sombra. La sombra se consigue
+            mediante una imagen muy grande que contiene una sombra orientada hacia el lado derecho e inferior. La ventaja de este método 
+            es que es sencillo y solamente requiere añadir un par de div por cada elemento. Además, como la sombra es una imagen muy 
+            grande, el efecto funciona con elementos de cualquier tamaño.<br>
+        </p>
+    </body>
+</html>

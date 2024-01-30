@@ -7,8 +7,24 @@ body {
 
 /* Selector de atributos para las etiquetas a de Cuerpo del documento 1*/
 a[href] {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:Impact; 
     color: rgb(41, 109, 86);
+}
+
+/* Selector de clase para adjuntar una imagen a algunos enlaces */
+.imagenesEnlaces {
+    padding: 0 0 0 230px;
+    background: #FFF url(../img/Enlaces.png) no-repeat left center;
+}
+
+/* Selector de clase para que los enlaces se vean como botones */
+.botonesEnlaces {
+    text-decoration: none;
+    background: #EEE;
+    color: #222;
+    border: 1px outset #CCC;
+    padding: .1em .5em;
+    margin-left: 20px;
 }
 
 /* Selector de clase para aplicar un formato de ancho y alto a un parrafo*/
