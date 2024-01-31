@@ -18,6 +18,12 @@
         </title>
     </head>
     <body>
+        <script>
+            const mensaje = () => {
+                alert("Hola Mundo del Desarrollo Web.")
+            };
+        </script>
+
         <h1>
             INTRODUCCIÓN A LOS FORMULARIOS.
         </h1>
@@ -271,6 +277,94 @@
         <p>
             <mark>Src:</mark> Permite especificar el origen de la imagen, para un campo de tipo image, es decir su ubicación, bien 
             mediante una ruta absoluta o relativa.
+        </p>
+
+        <p>
+            <mark>Max, Mín, Step:</mark> Permiten especificar los valores mínimos, máximos y los intervalos de los valores numéricos o de 
+            fecha que se puede aplicar a un campo, siempre y cuando este sea de tipo number, range, date, datetime, datetime-local, month,
+            time y week. Se ha de tener en consideración que para los campos que reflejan fechas, esta se ha de expresar en formato 
+            americano, es decir año, mes, dia.
+
+            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO_1.txt" autocomplete="off" name="FORMULARIO1" method="GET" enctype="text/plain">
+                Identificación: <input type="text" name="identificacion" pattern="[0-9]{8}-[a-zA-Z]{1}" title="XXXXXXXX-A"><br>
+                Nombre: <input type="text" name="nombre" placeholder="Teclee su nombre" size="80" maxlength="70"><br>
+                Edad: <input type="number" name="edad" min="18" max="100" step="1" id="edad"><br>
+                fecha de nacimiento: <input type="date" min="1924-01-01" max="2030-01-01"><br>
+                Puntuación: <input type="number" name="puntuacion" min="0" max="20" step="2" value="0"><br>
+                Email: <input type="email" name="correo" placeholder="Digite su correo electrónico" size="90" multiple><br>
+                <input type="submit" name="enviar" value="Enviar datos">
+            </form>
+        </p>
+
+        <p>
+            <mark>Multiple:</mark> Permite especificar en campos de tipo file o email. Que se puedan introducir en el campo uno o más 
+            valores. Es un atributo booleano, por lo tanto la simple aparición del mismo en la etiqueta del campo, activa la opción.
+        </p>
+
+        <p>
+            <mark>List:</mark> Permite especificar una lista de datos, la cual será asociada al campo de forma que cuando se introduzca el
+            valor del mismo se pueda seleccionar uno de los datos especificados en la lista simplemente seleccionándolo.<br>
+            Para que funcione correctamente el atributo trabaja en asociación con la etiqueta datalist, la cual permite especificar los 
+            datos que han de aparecen en la lista. Para especificar los datos de la lista en el interior de la etiqueta se ha de utilizar 
+            otra etiqueta denominada option.<br>
+            La etiqueta option, tiene varios atributos asociados, como son: disabled, que específica que el valor esta desactivado. El 
+            atributo label que permite especificar un texto corto para la opción. El atributo selected, el cual predetermina el elemento 
+            seleccionado de la lista y el atributo value, el cual permite indicar el valor que será enviado al servidor como dato.
+
+            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO_1.txt" autocomplete="off" name="FORMULARIO1" method="GET" enctype="text/plain">
+                <input type="text" name="marcas" list="lista1" placeholder="Seleccione una marca:"><br>
+                <datalist id="lista1">
+                    <option label="Mazda" value="Mazda">Mazda</option>
+                    <option label="Chevrolet" value="Chevrolet">Chevrolet</option>
+                    <option label="Toyota" value="Toyota">Toyota</option>
+                    <option label="Kia" value="Kia">Kia</option>
+                </datalist>
+                <input type="submit" name="enviar" value="Enviar datos"><br>
+                <input type="button" name="Llamar funcion" value="Activar alert" onclick="mensaje()"><br>
+                Seleccione un color: <input type="color" name="color">
+            </form>
+        </p>
+
+        <p>
+            <mark>Pattern:</mark> Permite especificar un “patrón” de entrada de datos en el campo sobre el que se aplica, de forma que si 
+            el valor introducido no cumple el patrón especificado, el campo no será validado por el formulario. El atributo trabajo con 
+            los campos de tipo text, search, tel, email y password. Como recomendación se indica que se utilice el atributo global title, 
+            para mostrar ayuda sobre el patrón de forma que el usuario sepa como introducir el mismo. Un patrón es una cadena de texto, 
+            compuesta por símbolos o caracteres, los cuales significan algo según sean compuestos.
+        </p>
+
+        <p>Type: Permite especificar el tipo de campo que se quiere solicitar. El tipo por defecto que se aplica en caso de no aparecer
+        el atributo es text, aunque se recomienda que el atributo siempre se especifique.<br>
+            <pre>
+                Button: Define un botón sobre el que se puede realizar clic. Es frecuentemente usado para activar scripts.
+                Chechkbox: Define una casilla de verificación.
+                Color: Define un campo de tipo selector de colores.
+                Date: Define un campo de tipo fecha en formato año, mes, dia. No se ha de especificar hora.
+                Datetime: Define un campo de tipo fecha y hora en formato año, mes, dia, hora, minuto, segundo y fracción de segundo, 
+                basado en zona horaria.
+                datetime-local: Define un campo de tipo fecha y hora en formato año, mes, dia, hora, minuto, segundo y fracción de segundo,
+                sin base de zona horaria.
+                Email: Define un campo de tipo correo electrónico.
+                File: Define un campo de tipo selector de ficheros, el cual visualiza un botón y presenta un cuadro de dialogo, donde se 
+                puede seleccionar el/los ficheros a seleccionar.
+                Hidden: Define un campo de tipo oculto, normalmente son utilizados por los desarrolladores para el envió de información al
+                servidor.
+                Image: Define un campo de tipo botón de envió representado mediante una imagen especificada.
+                Month: Define un campo de tipo control de mes y año, presentando un selector de fecha.
+                Number: Define un campo de tipo numérico entero.
+                Password: Define un campo de tipo contraseña, este tipo de campo visualiza normalmente asteriscos en vez de mostrar el
+                contenido que se teclea.
+                Radio: Define un botón de radio, para selección única, es decir seleccionar una opción entre varias posibles.
+                Range: Define un campo de tipo deslizador, en el cual arrastrando el mismo se selecciona un rango de valor numérico.
+                Reset: Define un campo de tipo botón de limpieza, el cual borra el contenido de los campos del formulario.
+                Search: Define un campo de tipo búsqueda, para teclear una cadena de búsqueda, no realiza búsquedas en el sitio.
+                Submit: Define un campo de tipo botón de envió, al pulsarlo se realiza el envió del formulario.
+                Tel: Define un campo de tipo introducción de telefono.
+                Text: Define un campo de tipo texto, el ancho por defecto del campo es de 20 caracteres.
+                Time: Define un campo para la introducción de horas.
+                Url: Define un campo para la introducción de direcciones web(url’s).
+                Week: Define un campo para la introducción de semana y mes.
+            </pre>
         </p>
     </body>
 </html>

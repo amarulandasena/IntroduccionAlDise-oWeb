@@ -109,6 +109,11 @@ input {
     margin: 3px;
 }
 
+/* Selector de etiqueta para cambiar la fuente de la etiqueta pre */
+pre {
+    font-family: Arial;
+}
+
 /* Selectores de clase para lograr el efecto de sombra en las imagenes 
 
 .dropshadow {
