@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="es" manifest="ListasYMenus.appcache">
+    <head>
+        <base href="http://127.0.0.1:5500/src/ListasYMenus.html" target="_blank">
+        <meta charset="UTF-8">
+        <meta name="application-name" content="Introducción al diseño web">
+        <meta name="description" content="Aplicación para el aprendizaje del lenguaje HTML junto con CSS3">
+        <meta name="author" content="Andres Marulanda">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="keywords" content="diseño, web, html5, css3, aprendizaje, enseñanza, curso, básico">
+        <meta name="http-equiv" content="UTF-8">
+
+        <link rel="stylesheet" href="../css/HojaEstilos1.css" hreflang="es" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/HojaEstilos3.css" hreflang="es" type="text/css" media="screen">
+
+        <title>
+            Listas y Menús.
+        </title>
+    </head>
+    <body>
+        <h1>
+            LISTAS Y MENÚS.
+        </h1>
+
+        <h2>
+            VIÑETAS PERSONALIZADAS.
+        </h2>
+        <p>
+            List-style-type: Permite establecer el tipo de viñeta mostrada para una lista.<br>
+            Valores: disc | circle | square | decimal | decimal-leading-zero | lower-roman | upper-roman | lower-greek | lower-latin | 
+            upper-latin | armenian | georgian | lower-alpha | upper-alpha | none | inherit.<br>
+            El valor none permite mostrar una lista en la que sus elementos no contienen viñetas, números o letras. Se trata de un valor 
+            muy utilizado, ya que es imprescindible para los menús de navegación creados con listas.<br>
+            ▪ Los valores gráficos son disc, circle y square y muestran como viñeta un círculo relleno, un círculo vacío y un cuadrado 
+            relleno respectivamente.<br>
+            ▪ Los valores numéricos están formados por decimal, decimal-leading-zero, lower-roman, upper-roman, armenian y georgian.<br>
+            ▪ Por último, los valores alfanuméricos se controlan mediante lower-latin, lower-alpha, upper-latin, upper-alpha y lower-greek.
+        </p>
+        <img src="../img/EstilosViñetas.JPG" height="400px" width="500px" alt="Estilos de Viñetas">
+
+        <p>
+            List-style-position: Permite establecer la posición de la viñeta de cada elemento de una lista.<br>
+            Valores: inside | outside | inherit.<br>
+            Visualicemos de manera gráfica ña diferencia entre los valores inside y outside.
+        </p>
+        <img src="../img/PosicionViñetas.JPG" height="400px" width="500px" alt="Posición viñetas">
+
+        <p>
+            List-style-image: Permite reemplazar las viñetas automáticas por una imagen personalizada.<br>
+            Valores: url | none | inherit.<br>
+            Las imágenes personalizadas se indican mediante la URL de la imagen. Si no se encuentra la imagen o no se puede cargar, se 
+            muestra la viñeta automática correspondiente (salvo que explícitamente se haya eliminado mediante la propiedad list-style-type).
+        </p>
+        <img src="../img/ImagenesViñetas.JPG" height="400px" width="500px" alt="Imagenes como viñetas">
+
+        <p>
+            Shorthand list style: Propiedad que permite establecer de forma simultánea todas las opciones de una lista.<br>
+            Valores: ( list-style-type || list-style-position || list-style-image ) | inherit.<br>
+            la notación || significa que el orden en el que se indican los valores de la propiedad es indiferente.<br>
+            Cuando se utiliza una viñeta personalizada, es conveniente indicar la viñeta automática que se mostrará cuando no se pueda 
+            cargar la imagen:
+        </p>
+
+        <h2>
+            MENÚ VERTICAL SENCILLO.
+        </h2>
+        <p>
+            A continuación se muestra la transformación de una lista sencilla de enlaces en un menú vertical de navegación.
+        </p>
+        <ul>
+            <li><a href="#" title="Enlace genérico1">Elemento 1</a></li>
+            <li><a href="#" title="Enlace genérico2">Elemento 2</a></li>
+            <li><a href="#" title="Enlace genérico3">Elemento 3</a></li>
+            <li><a href="#" title="Enlace genérico4">Elemento 4</a></li>
+            <li><a href="#" title="Enlace genérico5">Elemento 5</a></li>
+            <li><a href="#" title="Enlace genérico6">Elemento 6</a></li>
+        </ul>
+
+        <p>
+            Producto de la transformación:
+        </p>
+        <ul id="menuVerticalSencillo">
+            <li><a href="#" title="Enlace genérico1">Elemento 1</a></li>
+            <li><a href="#" title="Enlace genérico2">Elemento 2</a></li>
+            <li><a href="#" title="Enlace genérico3">Elemento 3</a></li>
+            <li><a href="#" title="Enlace genérico4">Elemento 4</a></li>
+            <li><a href="#" title="Enlace genérico5">Elemento 5</a></li>
+            <li><a href="#" title="Enlace genérico6">Elemento 6</a></li>
+        </ul>
+
+        <h2>
+            MENÚ HORIZONTAL SENCILLO.
+        </h2>
+        <p>
+            A partir de un menú vertical sencillo, es posible crear un menú horizontal sencillo aplicando las propiedades CSS conocidas 
+            hasta el momento.
+        </p>
+        <ul>
+            <li><a href="#" title="Enlace genérico1">Elemento 1</a></li>
+            <li><a href="#" title="Enlace genérico2">Elemento 2</a></li>
+            <li><a href="#" title="Enlace genérico3">Elemento 3</a></li>
+            <li><a href="#" title="Enlace genérico4">Elemento 4</a></li>
+            <li><a href="#" title="Enlace genérico5">Elemento 5</a></li>
+            <li><a href="#" title="Enlace genérico6">Elemento 6</a></li>
+        </ul>
+        <p>
+            A continuación se muestra la transformación del anterior menú vertical sencillo en un menú horizontal sencillo.
+        </p>
+        <ul class="menuHorizontalSencillo">
+            <li><a href="#" title="Enlace genérico1">Elemento 1</a></li>
+            <li><a href="#" title="Enlace genérico2">Elemento 2</a></li>
+            <li><a href="#" title="Enlace genérico3">Elemento 3</a></li>
+            <li><a href="#" title="Enlace genérico4">Elemento 4</a></li>
+            <li><a href="#" title="Enlace genérico5">Elemento 5</a></li>
+            <li><a href="#" title="Enlace genérico6">Elemento 6</a></li>
+        </ul>
+    </body>
+</html>

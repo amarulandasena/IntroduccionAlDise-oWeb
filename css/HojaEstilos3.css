@@ -149,4 +149,71 @@ cualquier elemento.</p>
 </div>
 </div> */
 
+/* Selectores para los estilos de viñetas y menús */
+#viñetasPersonalizadas {
+    list-style-type: square;
+}
+
+#menuVerticalSencillo {
+
+    /* Definir el ancho del menú */ 
+    width: 180px;
+
+    /* Eliminar las viñetas automáticas y todos los márgenes y espaciados aplicados por defecto */ 
+    list-style: none;
+    margin: 0 0 0 20px;
+    padding: 0;
+
+    /*Añadir un borde al menú de navegación y establecer el color de fondo y los bordes de cada elemento del menú */
+    border: 1px outset #a86e6e;
+    border-bottom: none;
+}
+
+#menuVerticalSencillo li{
+    border-bottom: 1px solid #A86E6E;
+    border-top: 1p solid #FFF;
+    background-color: #F4F4F4;
+}
+
+#menuVerticalSencillo li a {
+    /* Mostrarlos como un elemento de bloque para que ocupen todo el espacio de cada <li> del menú, añadir un espacio de relleno y 
+    modificar los colores y la decoración por defecto */
+    display: block;
+    padding: .3em 0 .3em .6em;
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+
+
+.menuHorizontalSencillo {
+    /* Reemplazar el ancho y el borde del elemento <ul> y aplicar las propiedades float y clear */
+    clear: both;
+    float: left;
+    width: 100%;
+    list-style: none;
+    margin: 0 0 0 20px;
+    padding: 0;
+    border-left: 1px solid #7C7C7C;
+}
+
+.menuHorizontalSencillo li {
+    float:left;
+}
+
+.menuHorizontalSencillo li a {
+    /* Modificar el padding y los bordes de los enlaces que forman el menú */
+    padding: .3em;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    background: #F4F4F4;
+    border-top: 1px solid #7C7C7C;
+    border-right: 1px solid #7C7C7C;
+    border-bottom: 1px solid #9C9C9C;
+}
+
 
