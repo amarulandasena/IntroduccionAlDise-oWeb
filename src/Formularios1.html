@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="es" manifest="Formularios1.appcache">
+    <head>
+        <base href="http://127.0.0.1:5500/src/Formularios.html" target="_blank">
+        <meta charset="UTF-8">
+        <meta name="application-name" content="Introducción al diseño web">
+        <meta name="description" cantent="Aplicación para el aprendizaje del lenguaje HTML junto con CSS3">
+        <meta name="author" content="Andres Marulanda">
+        <meta name="generator" content="Visual Studios Code">
+        <meta name="keywords" content="diseño, web, html5, css3, aprendizaje, enseñanza, curso, básico">
+        <meta http-equiv="" content="UTF-8">
+
+        <link rel="stylesheet" href="../css/HojaEstilos1.css" hreflang="es" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/HojaEstilos3.css" hreflang="es" type="text/css" media="screen">
+
+        <title>
+           Formularios 1
+        </title>
+    </head>
+        
+    <body>
+        <script>
+            const botonNormal = () => {
+                alert("Se ha pulsado el botón normal.")
+            }
+        </script>
+        <h1>
+            CONTINUACIÓN FORMULARIOS.
+        </h1>
+
+        <h2>
+            ETIQUETA BUTTON.
+        </h2>
+        <p>
+            Permite definir un botón sobre el cual se puede realizar pulsaciones de ratón. Si la etiqueta se utiliza dentro de un 
+            formulario se pueden utilizar prácticamente los mismos atributos que los explicados anteriormente para la etiqueta input, con 
+            el atributo type, con un valor de button. Aunque se recomienda que para incluir botones en el formulario se utilice la 
+            etiqueta input. Por otra parte la utilización fuera de un formulario de la etiqueta se suele realizar para asociar el botón a 
+            la ejecución de una función JavaScript. Se recomienda que utilice el atributo type de la etiqueta para especificar el valor
+            button, ya que dependiendo del navegador el tipo por defecto para la etiqueta se puede interpretar de diferente forma.<br>
+
+            <button type="button" onclick="botonNormal()">
+                Botón Normal
+            </button>
+        </p>
+
+        <h2>
+            ETIQUETA FIELDSET.
+        </h2>
+        <p>
+            Se utiliza como contenido dentro de formularios. Y su función es la de realizar grupos de campos dentro del formulario. Estos 
+            grupos de campos son representados mediante un marco con borde alrededor de los campos contenidos en el grupo.<br>
+            Atributos: <br>
+            <u>Disabled:</u> Especifica que los campos incluidos en el contenido de la etiqueta, estén desactivados.<br>
+            <u>Form:</u> Permite especificar a qué formulario pertenece el campo que se está solicitando especificando el atributo 
+            identificador del formulario. Como valor se ha de especificar el valor del atributo id, asociado al formulario donde se
+            encuentra incluido la etiqueta.<br>
+            <u>Name:</u> Permite especificar el nombre que se quiere asignar al grupo de controles del formulario. El nombre puede ser 
+            utilizado posteriormente bien por lenguajes clientes, para interactuar con el formulario, bien con lenguajes de servidor para 
+            procesar los datos recibidos e incluso por hojas de estilos, para aplicar un formato concreto al formulario.<br>
+            La etiqueta suele ir acompañada de otra etiqueta denomina legend, la cual permite establecer el título del grupo de elementos.<br>
+
+            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO_1.txt" autocomplete="off" method="GET" enctype="text/plain" name="FORMULARIO2">
+                <fieldset name="datosPersonales">
+                    <legend> DATOS PERSONALES </legend>
+                    <label form="FORMULARIO2" for="identificacion">Identificación:</label><br>
+                    <input type="text" name="identificacion" placeholder="Número de cédula" size="30" autofocus><br>
+
+                    <label form="FORMULARIO2" for="nombre">Nombre:</label><br>
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre" size="30" maxlength="70"><br>
+
+                    <label form="FORMULARIO2" for="apellidos">Apellidos:</label><br>
+                    <input type="text" name="apellidos" placeholder="Ingrese sus apellidos" size="30" maxlength="70"><br>
+
+                    <label form="FORMULARIO2" for="edad">Edad:</label><br>
+                    <input type="number" name="edad" placeholder="Edad" min="18" max="100" step="1"><br>
+                </fieldset>
+
+                <meter form="FORMULARIO2" high="80" low="40" optimum="60" min="0" max="100" value="50"></meter><br>
+                <input type="submit" name="enviar" value="Enviar datos personales">
+            </form>
+        </p>
+
+        <h2>
+            ETIQUETA LABEL.
+        </h2>
+        <p>
+            Permite definir una etiqueta o título para los campos de tipo input, el incluir un título en el formulario no realiza ninguna 
+            función especial sobre los campos del mismo, pero sí de cara al usuario representa una mejora en la presentación del formulario.<br>
+            Atributos:<br>
+            <strong>Form:</strong> Permite especificar a qué formulario pertenece el campo que se está solicitando especificando el atributo identificador 
+            del formulario.<br>
+            <strong>For:</strong> Permite especificar el nombre del control, con el cual se ha de asociar la etiqueta. El nombre que se ha de indicar es 
+            el utilizado en el atributo id del control.<br>
+            Ejemplo en el formulario anterior.
+        </p>
+
+        <h2>
+            ETIQUETA KEYGEN.
+        </h2>
+        <p>
+            Permite crear claves codificadas, de forma que sean enviadas junto con los datos del formulario, para añadir un nivel más de 
+            seguridad en el envío y recepción de los mismos. Cuando el formulario es enviado la clave privada es almacenada en el ordenador
+            cliente, mientras que la clave pública, es enviada al servidor.<br>
+            Atributos:<br>
+            <mark>Autofocus:</mark> Permite especificar cuál es el control que recibe el “foco”, cuando se realiza la carga del documento 
+            web en el navegador. Es un atributo booleano y solo con aparecer significa que está activado.<br>
+            <mark>Disabled:</mark> Especifica que el elemento sobre el que se aplica, se ha de desactivar. Un elemento desactivado está 
+            bloqueado y no se puede cambiar ni realizar clic sobre el mismo.<br>
+            <mark>Form:</mark> permite especificar a qué formulario pertenece el campo que se está solicitando especificando el atributo 
+            identificador del formulario. <br>
+            <mark>Name:</mark> Especificar el nombre que se quiere asignar al campo del formulario.<br>
+            <mark>Challenge:</mark> Permite especificar que las claves generadas sean cambiadas automáticamente, después de haberse 
+            producido el envió de los datos.<br>
+            <mark>Keytype:</mark> Permite especificar el tipo de codificación que se quiere utilizar para el cifrado de las claves. Se 
+            pueden seleccionar tres tipos de codificación: rsa, dsa y ec. Siendo la utilizada por defecto el primer tipo de codificación.<br>
+        </p>
+
+        <h2>
+            ETIQUETA METER.
+        </h2>
+        <p>
+            Permite definir un control que representa una medida escalar dentro de un rango conocido. Se suele utilizar para expresar uso 
+            de discos, importancia de un resultado, etc. No se recomienda su utilización para expresar un indicador o barra de progreso,
+            utilizándose para esa tarea la etiqueta progress.<br>
+            Atributos:
+            <em>Form:</em> Permite especificar a qué formulario pertenece el campo.<br>
+            <em>Value:</em> El atributo permite especificar el valor de la barra indicadora.<br>
+            <em>High, low, optimum:</em> Permiten especificar los valores numéricos a partir de los cuales se considera que son valores 
+            bajos y altos respectivamente. Así como el valor considerado como optimo dentro del rango. Al indicar como valor de la barra
+            indicadora un valor comprendido entre los rangos de alto y bajo, se cambia el color de visualización de la misma.<br>
+            <em>Min, max:</em> Permiten especificar los valores numéricos considerados mínimo y máximo respectivamente de la barra 
+            indicadora.<br>
+        </p>
+    </body>
+</html>
