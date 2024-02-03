@@ -1,0 +1,31 @@
+/* Selectores para dar formato a la tabla del archivo tablas */ 
+.tablaNormal {
+    margin-left: 20px;
+    width: 450px;
+    height: 350px;
+    border: 1px double rgb(11, 6, 15);
+    border-spacing: 0;
+}
+
+.tablaNormal th, .tablaNormal td {
+    border: 1px double rgb(11, 6, 15) ;
+    text-align: center;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.tablaAvanzada1 {
+    margin-left: 20px;
+    width: 350px;
+    height: 250px;
+    border: 2px dotted rgb(81, 46, 141);
+    empty-cells: hide;
+    caption-side: bottom;
+}
+
+.tablaAvanzada1 th, .tablaAvanzada1 td {
+    border: 2px dotted rgb(11, 6, 15) ;
+    text-align: center;
+}
