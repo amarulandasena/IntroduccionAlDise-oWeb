@@ -77,9 +77,14 @@
                     <input type="number" name="edad" placeholder="Edad" min="18" max="100" step="1"><br>
                 </fieldset>
 
+                <label form="FORMULARIO2">Etiqueta meter: </label><br>
                 <meter form="FORMULARIO2" high="80" low="40" optimum="60" min="0" max="100" value="50"></meter><br>
                 <input type="submit" name="enviar" value="Enviar datos personales">
             </form>
+            <p>
+                Progreso:<br>
+                <progress max="100" value="70"></progress>
+            </p>
         </p>
 
         <h2>
@@ -132,6 +137,82 @@
             indicadora un valor comprendido entre los rangos de alto y bajo, se cambia el color de visualización de la misma.<br>
             <em>Min, max:</em> Permiten especificar los valores numéricos considerados mínimo y máximo respectivamente de la barra 
             indicadora.<br>
+        </p>
+
+        <h2>
+            ETIQUETA PROGRESS.
+        </h2>
+        <p>
+            Permite especificar una barra indicadora, que sirve para representar el progreso de una tarea que está realizando. Se suele 
+            utilizar en conjunto con lenguajes de programación de cliente para mostrar el progreso de la tarea visualmente.<br>
+            Entre sus atributos encontramos max, el cual permite especificar un valor numérico el cual representaría, el 100% de la tarea 
+            que se está evaluando, y value, que representa el valor numérico, realizado por el momento de la tarea.<br>
+            Miremos un ejemplo en el último formulario.
+        </p>
+
+        <h2>
+            ETIQUETA OUTPUT.
+        </h2>
+        <p>
+            Permite definir el resultado de un cálculo, y mostrar el resultado de la operación realizada.<br>
+            <mark>For:</mark> Especificar el o los nombres de los controles, con los que se asocia la etiqueta. El nombre que se ha de 
+            indicar es el utilizado en el atributo id del control o controles que se quieren asociar, separados por espacios en blanco.<br>
+            <mark>Form:</mark> Permite especificar a qué formulario pertenece el campo que se está solicitando especificando el atributo
+            identificador del formulario.<br>
+            <mark>Name: </mark> Permite especificar el nombre que se quiere asignar al campo del formulario. El nombre puede ser utilizado 
+            posteriormente bien por lenguajes clientes, para interactuar con el formulario, bien con lenguajes de servidor para procesar 
+            los datos recibidos.
+
+            <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO.txt" method="GET" autocomplete="off" enctype="text/plain" name="FORMULARIO3">
+                <fieldset form="FORMULARIO3" name="operaciones">
+                    <legend>OPERACIÓN</legend>
+                    0<input type="range" name="operando1" value="50">100 + 
+                    0<input type="range" name="operando2" value="50">100 = 
+                    <output form="FORMULARIO3" for="operando1 operando2" name="resultado"></output>
+                </fieldset>
+
+                <fieldset form="FORMULARIO3" name="seleccionar">
+                    <legend>SELECCIONAR</legend>
+                    <select form="FORMULARIO3" name="vehiculos" autofocus size="6">
+                        <option value="ninguno" label="ninguno" selected>Ninguno</option>
+                        <option value="renault" label="renault">Renault</option>
+                        <option value="mazda" label="mazda">Mazda</option>
+                        <option value="chevrolet" label="chevrolet">Chevrolet</option>
+                        <option value="toyota" label="toyota">Toyota</option>
+                        <option value="kia" label="kia">KIA</option>
+                    </select>
+                </fieldset>
+            </form>
+        </p>
+
+        <h2>
+            ETIQUETA SELECT.
+        </h2>
+        <p>
+            Permite la creación de listas desplegables o listas abiertas, desde la que poder realizar la selección de una o varias de las 
+            opciones que se presentan en la misma.<br>
+            La etiqueta se configura en conjunto con otra etiqueta denominada option, la cual permite especificar las opciones que aparecen
+            en la lista.<br>
+            <mark>Autofocus:</mark> Permite especificar cual es el control que recibe el “foco”, cuando se realiza la carga del documento 
+            web en el navegador. Es un atributo booleano y solo con aparecer significa que está activado.<br>
+            <mark>Disabled:</mark> Especifica que el elemento sobre el que se aplica, se ha de desactivar. Un elemento desactivado está 
+            bloqueado y no se puede cambiar ni realizar clic sobre el mismo.<br>
+            <mark>Form:</mark> Permite especificar a qué formulario pertenece el campo que se está solicitando especificando el atributo 
+            identificador del formulario.<br>
+            <mark>Multiple:</mark> Permite especificar en campos de tipo select. Que se puedan seleccionar una o más opciones de la lista.<br>
+            <mark>Name:</mark> Permite especificar el nombre que se quiere asignar al campo del formulario.<br>
+            <mark>Required:</mark> Aplicado a un campo permite especificar que la introducción de datos en el campo ha de ser obligatorio, 
+            es decir no se puede dejar en blanco.<br>
+            <mark>Size:</mark> Permite especificar un valor numérico, el cual corresponderá con las opciones visibles que se presentan de 
+            la lista.<br>
+            <br>
+            <mark>Disabled:</mark> Especifica que el elemento sobre el que se aplica, se ha de desactivar. Un elemento desactivado está 
+            bloqueado y no se puede cambiar ni realizar clic sobre el mismo.<br>
+            <mark>Label:</mark> Permite especificar una etiqueta corta en formato de texto, para la opción que se está especificando.<br>
+            <mark>Selected:</mark> Permite especificar que la opción sobre la cual se aplica, es la opción preseleccionado cuando el 
+            documento es cargado en el navegador.<br>
+            <mark>Value:</mark> Especifica el valor que se quiere asignar a la opción que se presenta en la lista de forma que este valor 
+            es el enviado, cuando se pulsa el botón de envió del formulario.<br>
         </p>
     </body>
 </html>
