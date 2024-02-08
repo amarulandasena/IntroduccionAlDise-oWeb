@@ -77,6 +77,13 @@
                     <input type="number" name="edad" placeholder="Edad" min="18" max="100" step="1"><br>
                 </fieldset>
 
+                <fieldset name="comentarios">
+                    <legend> COMENTARIOS </legend>
+                    <textarea required name="comentarios personales" form="FORMULARIO2" maxlength="500" cols="100" rows="5" wrap="soft">
+                        Ingrese una breve descripción personal... 
+                    </textarea>
+                </fieldset>
+
                 <label form="FORMULARIO2">Etiqueta meter: </label><br>
                 <meter form="FORMULARIO2" high="80" low="40" optimum="60" min="0" max="100" value="50"></meter><br>
                 <input type="submit" name="enviar" value="Enviar datos personales">
@@ -214,5 +221,68 @@
             <mark>Value:</mark> Especifica el valor que se quiere asignar a la opción que se presenta en la lista de forma que este valor 
             es el enviado, cuando se pulsa el botón de envió del formulario.<br>
         </p>
+
+        <h2>
+            ETIQUETA TEXTAREA
+        </h2>
+        <p>
+            Permite definir un area de texto similar a un campo de texto, pero con la diferencia que se pueden indicar tanto el número de 
+            filas, como de columnas, con las que se quiere representar visualmente el control, no teniendo un límite definido para el 
+            numero de caracteres que se pueden teclear en el area de texto. Se suele utilizar para solicitar textos explicativos, 
+            opiniones, comentarios, etc. Normalmente el tipo de letra utilizado por el control es Courier, aunque mediante hojas de estilos
+            es posible variar las opciones del control.<br>
+            <mark>Autofocus:</mark> Permite especificar cuál es el control que recibe el “foco”, cuando se realiza la carga del documento 
+            web en el navegador. Es un atributo booleano y solo con aparecer significa que está activado.<br>
+            <mark>Disabled:</mark> Especifica que el elemento sobre el que se aplica, se ha de desactivar. Un elemento desactivado está 
+            bloqueado y no se puede cambiar ni realizar clic sobre el mismo.<br>
+            <mark>Required:</mark> Aplicado a un campo permite especificar que la introducción de datos en el campo ha de ser obligatorio, 
+            es decir no se puede dejar en blanco.<br>
+            <mark>Readonly:</mark> Permite especificar que un campo sea de solo lectura, es decir su contenido será visible y podrá ser 
+            seleccionado, pero no se podrá modificar. Se suele utilizar en conjunto con lenguajes de programación de cliente, para alterar 
+            el valor de solo lectura, cuando se cumplan ciertas condiciones en los datos.<br>
+            <mark>Name:</mark> Permite especificar el nombre que se quiere asignar al campo del formulario.<br>
+            <mark>Form:</mark> Permite especificar a qué formulario pertenece el campo que se está solicitando especificando el atributo 
+            identificador del formulario.<br>
+            <mark>Maxlength:</mark> Permite especificar el número de caracteres máximos que se permite teclear en una etiqueta de tipo 
+            entrada.<br>
+            <mark>Cols:</mark> Permite especificar el número de columnas visibles, que el control visualiza.<br>
+            <mark>Rows:</mark> Permite especificar el número de filas visibles, que el control visualiza en su representación en el 
+            navegador.<br>
+            <mark>Wrap:</mark> Permite especificar como se realiza el ajuste de palabras en el contenido del control, se puede seleccionar 
+            entre dos posibles valores hard y soft.<br>
+        </p>
+
+        <h2>
+            ETIQUETA IFRAME
+        </h2>
+        <p>
+            Permite realizar la inserción de un marco en línea, dentro del documento web. Un marco le va a permitir insertar contenido 
+            dentro de un documento como puede ser otro documento web, un mapa de google maps, etc.<br>
+            <mark>Width:</mark> Permite especificar el ancho del marco en pixeles.<br>
+            <mark>Height:</mark> Permite especificar el alto del marco en pixeles.<br>
+            <mark>Name:</mark> Permite especificar el nombre que se quiere asignar al marco insertado en el documento web.<br>
+            <mark>Src:</mark> Permite especificar el origen del objeto que se quiere insertar en el marco, es decir su ubicación, bien 
+            mediante una ruta absoluta o relativa.<br>
+            <mark>Srcdoc:</mark> Permite especificar el contenido del objeto en línea, es decir si se especifica contenido en este atributo
+            y el navegador soporta el mismo, se sobrescribe el contenido del atributo src, presentándose el contenido especificado en este 
+            atributo.<br>
+            <mark>Seamless:</mark> Permite especificar que el marco se presente sin barras de desplazamiento ni bordes, de esta forma su 
+            integración dentro del documento web, es más suave. Es un atributo booleano, para activarlo solo ha de estar presente en la
+            etiqueta.<br>
+            <mark>Sandbox:</mark> Permite especificar ciertas restricciones para el contenido del marco, siempre y cuando se utilice el 
+            atributo. Si se especifica el atributo con un valor vacío ( “” ), se aplican todas las restricciones, en otro caso se han de 
+            especificar las restricciones separadas por espacios en blanco dentro de la cadena de texto que se utiliza como valor del 
+            atributo.<br>
+            allow-same-origin<br>
+            allow-top-navigation<br>
+            allow-forms<br>
+            allow-scripts<br>
+        </p>
+
+        <h3>
+            Video insertado desde youtube.
+        </h3>
+        <iframe width="900px" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.youtube.com/watch?v=wy1_EITm-UU&ab_channel=Platzi" output="embed">
+        </iframe>
     </body>
 </html>
