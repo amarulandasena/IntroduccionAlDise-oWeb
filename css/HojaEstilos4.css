@@ -29,3 +29,44 @@
     border: 2px dotted rgb(11, 6, 15) ;
     text-align: center;
 }
+
+/* Selectores para aplicar formatos a los formularios */
+
+.enlace {                                   /* Convertir un botón en un enlace */
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+fieldset label {                            /* Convertir un label en un elemento de bloque */ 
+    display: block;
+    margin-top: .5em 0 0 0;
+}
+
+#btn {
+    display: block;
+    margin: 1em 0;
+}
+
+fieldset div {                              /* Alinear los label y los input */
+    margin: .4em 0;
+}
+
+fieldset div label {
+    width: 10%;
+    float: left;
+}
+
+/* regla CSS para construir formularios de 2 o más columnas.
+form fieldset {
+    float: left;
+    width: 45%;
+}
+*/
+
+input:focus {                                /* Resaltar el campo seleccionado */
+    border: 2px outset rgb(46, 6, 83);
+    background-color: rgb(197, 188, 206);
+}

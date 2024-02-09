@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="es" manifest="Layout.appcache">
+    <head>
+        <base href="http://127.0.0.1:5500/src/Layout.html" terget="_blank">
+        <meta charset="UTF-8">
+        <meta name="application-name" content="Introducción al diseño web">
+        <meta name="description" content="Aplicación para el aprendizaje del lenguaje HTML junto con CSS3">
+        <meta name="author" content="Andres Marulanda">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="keywords" content="diseño, web, html5, css3, aprenidzaje, enseñanza, curso, básico">
+        <meta name="http-equiv" content="UTF-8">
+
+        <link rel="stylesheet" href="../css/HojaEstilos1.css" hreflang="es" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/HojaEstilos2.css" hreflang="es" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/HojaEstilos4.css" hreflang="es" type="text/css" media="screen">
+
+        <title>
+            Layout
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            LAYOUT
+        </h1>
+        <p>
+            El diseño de las páginas web habituales se divide en bloques: cabecera, menú, contenidos y pie de página.<br>
+            El desarrollo de CSS ha permitido que se puedan realizar los mismos diseños sin utilizar tablas HTML. Las principales ventajas
+            de diseñar la estructura de las páginas web con CSS en vez de con tablas HTML son las siguientes:<br>
+            Mantenimiento: una página diseñada exclusivamente con CSS es mucho más fácil de mantener que una página diseñada con tablas. 
+            Cambiar el aspecto de una página creada con CSS es tan fácil como modificar unas pocas reglas.<br>
+            Accesibilidad: las páginas creadas con CSS son más accesibles que las páginas diseñadas con tablas.<br>
+            Velocidad de carga: el código HTML de una página diseñada con tablas es mucho mayor que el código de la misma página diseñada 
+            exclusivamente con CSS, por lo que tarda más tiempo en descargarse.<br>
+            Semántica: aunque resulta obvio, las tablas HTML sólo se deben utilizar para mostrar datos cuya información sólo se entiende 
+            en forma de filas y columnas.<br>
+        </p>
+
+        <h2>
+            CENTRAR UNA PÁGINA HORIZONTALMENTE.
+        </h2>
+        <p>
+            A medida que aumenta el tamaño y la resolución de las pantallas de ordenador, se hace más difícil diseñar páginas que se 
+            adapten al tamaño de la ventana del navegador.<br>
+            Cuando la resolución de la pantalla es muy grande, la mayoría de páginas de anchura fija alineadas a la izquierda parecen muy 
+            estrechas y provocan una sensación de vacío.<br>
+            La solución más sencilla para evitar los grandes espacios en blanco consiste en crear páginas con una anchura fija adecuada y 
+            centrar la página horizontalmente respecto de la ventana del navegador.<br>
+            Utilizando la propiedad margin de CSS, es muy sencillo centrar una página web horizontalmente. La solución consiste en agrupar 
+            todos los contenidos de la página en un elemento div y asignarle a ese div unos márgenes laterales automáticos. El div que 
+            encierra los contenidos se suele llamar contenedor.<br>
+            { width : 300px; margin : 0 auto }.<br>
+            Cuando se asignan márgenes laterales automáticos a un elemento, los navegadores centran ese elemento respecto de su elemento 
+            padre.<br>
+
+        </p>
+        <img src="../img/CentradoHorizontal1.JPG" height="300px" width="500px" alt="centrado horizontal">
+        <img src="../img/CentradoHorizontal2.JPG" height="300px" width="500px" alt="centrado horizontal">
+        <p>
+            Modificando ligeramente el código CSS anterior se puede conseguir un diseño dinámico o líquido (también llamado fluido) que 
+            se adapta a la anchura de la ventana del navegador y permanece siempre centrado:<br>
+            { width : 70%; margin : 0 auto }.<br>
+            Estableciendo la anchura del elemento contenedor mediante un porcentaje, su anchura se adapta de forma continua a la anchura 
+            de la ventana del navegador. De esta forma, si se reduce la anchura de la ventana del navegador, la página se verá más 
+            estrecha y si se maximiza la ventana del navegador, la página se verá más ancha.<br>
+            A medida que se aumenta el ancho de la ventana del navegador, aumenta el ancho del documento web, permitiendo ver mas texto en 
+            cada una de las líneas.
+        </p>
+    </body>
+</html>

@@ -13,6 +13,7 @@
 
         <link rel="stylesheet" href="../css/HojaEstilos1.css" hreflang="es" type="text/css" media="screen">
         <link rel="stylesheet" href="../css/HojaEstilos3.css" hreflang="es" type="text/css" media="screen">
+        <link rel="stylesheet" href="../css/HojaEstilos4.css" hreflang="es" type="text/css" media="screen">
 
         <title>
            Formularios 1
@@ -64,17 +65,25 @@
             <form accept-charset="UTF-8" action="../vtt/DATOS_FORMULARIO_1.txt" autocomplete="off" method="GET" enctype="text/plain" name="FORMULARIO2">
                 <fieldset name="datosPersonales">
                     <legend> DATOS PERSONALES </legend>
-                    <label form="FORMULARIO2" for="identificacion">Identificación:</label><br>
-                    <input type="text" name="identificacion" placeholder="Número de cédula" size="30" autofocus><br>
+                    <div>
+                        <label form="FORMULARIO2" for="identificacion">Identificación:</label>
+                        <input type="text" name="identificacion" placeholder="Número de cédula" size="30" autofocus>
+                    </div>
+                    
+                    <div>
+                        <label form="FORMULARIO2" for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre" size="30" maxlength="70">
+                    </div>
 
-                    <label form="FORMULARIO2" for="nombre">Nombre:</label><br>
-                    <input type="text" name="nombre" placeholder="Ingrese su nombre" size="30" maxlength="70"><br>
+                    <div>
+                        <label form="FORMULARIO2" for="apellidos">Apellidos:</label>
+                        <input type="text" name="apellidos" placeholder="Ingrese sus apellidos" size="30" maxlength="70">
+                    </div>
 
-                    <label form="FORMULARIO2" for="apellidos">Apellidos:</label><br>
-                    <input type="text" name="apellidos" placeholder="Ingrese sus apellidos" size="30" maxlength="70"><br>
-
-                    <label form="FORMULARIO2" for="edad">Edad:</label><br>
-                    <input type="number" name="edad" placeholder="Edad" min="18" max="100" step="1"><br>
+                    <div>
+                        <label form="FORMULARIO2" for="edad">Edad:</label>
+                    <input type="number" name="edad" placeholder="Edad" min="18" max="100" step="1">
+                    </div>   
                 </fieldset>
 
                 <fieldset name="comentarios">
@@ -86,7 +95,7 @@
 
                 <label form="FORMULARIO2">Etiqueta meter: </label><br>
                 <meter form="FORMULARIO2" high="80" low="40" optimum="60" min="0" max="100" value="50"></meter><br>
-                <input type="submit" name="enviar" value="Enviar datos personales">
+                <input type="submit" name="enviar" value="Enviar datos personales" id="btn">
             </form>
             <p>
                 Progreso:<br>
